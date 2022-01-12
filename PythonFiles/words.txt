@@ -1,0 +1,5 @@
+box
+hand
+shoe
+cup
+hair

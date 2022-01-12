@@ -1,0 +1,240 @@
+{
+	TAG_List('i'): [4 TAG_Compound(s)]
+	{
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 301
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {3 Entries}
+				{
+					TAG_List('Lore'): [20 TAG_String(s)]
+					{
+						TAG_String: §7Strength: §c+7 §9(Godly +7)
+						TAG_String: §7Crit Chance: §c+5%
+						TAG_String: §7Crit Damage: §c+21% §9(Godly +6%)
+						TAG_String: 
+						TAG_String: §7Health: §a+135 HP
+						TAG_String: §7Defense: §a+90
+						TAG_String: §7Intelligence: §a+4 §9(Godly +4)
+						TAG_String: 
+						TAG_String: §9Growth V
+						TAG_String: §7Grants §a+75 §c❤ Health§7.
+						TAG_String: §9Thorns III
+						TAG_String: §7Grants a §a50% §7chance to
+						TAG_String: §7rebound §a9% §7of damage dealt
+						TAG_String: §7back at the attacker.
+						TAG_String: 
+						TAG_String: §6Full Set Bonus: Unstable Blood
+						TAG_String: §7Sometimes strikes nearby mobs
+						TAG_String: §7with lightning. It's unstable!
+						TAG_String: 
+						TAG_String: §6§lLEGENDARY BOOTS
+					}
+					TAG_Int('color'): 11670243
+					TAG_String('Name'): §6Godly Unstable Dragon Boots
+				}
+				TAG_Compound('ExtraAttributes'): {9 Entries}
+				{
+					TAG_String('color'): 178:18:227
+					TAG_String('bossId'): 07fba9eb-07f9-455e-b1fb-fa8beb41ca54
+					TAG_String('spawnedFor'): c369777f-175b-404b-a24c-898e91860699
+					TAG_String('modifier'): godly
+					TAG_String('originTag'): BOSS_DROP
+					TAG_String('id'): UNSTABLE_DRAGON_BOOTS
+					TAG_Compound('enchantments'): {2 Entries}
+					{
+						TAG_Int('thorns'): 3
+						TAG_Int('growth'): 5
+					}
+					TAG_String('uuid'): 9db83aa4-3b39-4749-bff9-5089b47eb684
+					TAG_String('timestamp'): 11/16/19 6:57 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 300
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {3 Entries}
+				{
+					TAG_List('Lore'): [22 TAG_String(s)]
+					{
+						TAG_String: §7Strength: §c+7 §9(Godly +7)
+						TAG_String: §7Crit Chance: §c+5%
+						TAG_String: §7Crit Damage: §c+21% §9(Godly +6%)
+						TAG_String: 
+						TAG_String: §7Health: §a+175 HP
+						TAG_String: §7Defense: §a+155
+						TAG_String: §7Intelligence: §a+4 §9(Godly +4)
+						TAG_String: 
+						TAG_String: §9Growth V
+						TAG_String: §7Grants §a+75 §c❤ Health§7.
+						TAG_String: §9Protection V
+						TAG_String: §7Grants §a+15 §a❈ Defense§7.
+						TAG_String: §9Thorns III
+						TAG_String: §7Grants a §a50% §7chance to
+						TAG_String: §7rebound §a9% §7of damage dealt
+						TAG_String: §7back at the attacker.
+						TAG_String: 
+						TAG_String: §6Full Set Bonus: Unstable Blood
+						TAG_String: §7Sometimes strikes nearby mobs
+						TAG_String: §7with lightning. It's unstable!
+						TAG_String: 
+						TAG_String: §6§lLEGENDARY LEGGINGS
+					}
+					TAG_Int('color'): 11670243
+					TAG_String('Name'): §6Godly Unstable Dragon Leggings
+				}
+				TAG_Compound('ExtraAttributes'): {10 Entries}
+				{
+					TAG_String('color'): 178:18:227
+					TAG_String('bossId'): 2a5ce951-040a-4365-8346-1d128ad28df8
+					TAG_String('spawnedFor'): 94664040-066b-424b-b23d-f4c91ba74083
+					TAG_String('modifier'): godly
+					TAG_String('originTag'): BOSS_DROP
+					TAG_String('id'): UNSTABLE_DRAGON_LEGGINGS
+					TAG_Compound('enchantments'): {3 Entries}
+					{
+						TAG_Int('thorns'): 3
+						TAG_Int('protection'): 5
+						TAG_Int('growth'): 5
+					}
+					TAG_String('uuid'): c3a0613a-1125-4d7a-bd92-20413754cf63
+					TAG_Int('anvil_uses'): 1
+					TAG_String('timestamp'): 11/30/19 2:56 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 299
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {3 Entries}
+				{
+					TAG_List('Lore'): [18 TAG_String(s)]
+					{
+						TAG_String: §7Strength: §c+7 §9(Godly +7)
+						TAG_String: §7Crit Chance: §c+5%
+						TAG_String: §7Crit Damage: §c+21% §9(Godly +6%)
+						TAG_String: 
+						TAG_String: §7Health: §a+195 HP
+						TAG_String: §7Defense: §a+175
+						TAG_String: §7Intelligence: §a+4 §9(Godly +4)
+						TAG_String: 
+						TAG_String: §9Growth V
+						TAG_String: §7Grants §a+75 §c❤ Health§7.
+						TAG_String: §9Protection V
+						TAG_String: §7Grants §a+15 §a❈ Defense§7.
+						TAG_String: 
+						TAG_String: §6Full Set Bonus: Unstable Blood
+						TAG_String: §7Sometimes strikes nearby mobs
+						TAG_String: §7with lightning. It's unstable!
+						TAG_String: 
+						TAG_String: §6§lLEGENDARY CHESTPLATE
+					}
+					TAG_Int('color'): 11670243
+					TAG_String('Name'): §6Godly Unstable Dragon Chestplate
+				}
+				TAG_Compound('ExtraAttributes'): {10 Entries}
+				{
+					TAG_String('color'): 178:18:227
+					TAG_String('bossId'): ab4de927-8cd6-404b-9073-51306c943ecc
+					TAG_String('spawnedFor'): d342a1bc-9fd0-48a9-8626-295fb5b45cb2
+					TAG_String('modifier'): godly
+					TAG_String('originTag'): BOSS_DROP
+					TAG_String('id'): UNSTABLE_DRAGON_CHESTPLATE
+					TAG_Compound('enchantments'): {2 Entries}
+					{
+						TAG_Int('growth'): 5
+						TAG_Int('protection'): 5
+					}
+					TAG_String('uuid'): 0b6af7d6-dd05-429e-bdfe-96695392358e
+					TAG_Int('anvil_uses'): 1
+					TAG_String('timestamp'): 12/14/19 10:06 AM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 397
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('SkullOwner'): {2 Entries}
+				{
+					TAG_String('Id'): 8584e5d0-47fc-388b-b3c8-f89a62f375bf
+					TAG_Compound('Properties'): {1 Entries}
+					{
+						TAG_List('textures'): [1 TAG_Compound(s)]
+						{
+							TAG_Compound: {1 Entries}
+							{
+								TAG_String('Value'): eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYwNWZjNGUyYjY4YzQ1MDU5YWZlZjM5OTllOWE5NWFhM2Q4OTQzNTk3YTc4OTRlNTY5Mzk3ZDZjZjVkMTY3MmEifX19
+							}
+						}
+					}
+				}
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [18 TAG_String(s)]
+					{
+						TAG_String: §7Strength: §c+7 §9(Godly +7)
+						TAG_String: §7Crit Chance: §c+5%
+						TAG_String: §7Crit Damage: §c+21% §9(Godly +6%)
+						TAG_String: 
+						TAG_String: §7Health: §a+145 HP
+						TAG_String: §7Defense: §a+125
+						TAG_String: §7Intelligence: §a+29 §9(Godly +4)
+						TAG_String: 
+						TAG_String: §9Growth V
+						TAG_String: §7Grants §a+75 §c❤ Health§7.
+						TAG_String: §9Protection V
+						TAG_String: §7Grants §a+15 §a❈ Defense§7.
+						TAG_String: 
+						TAG_String: §6Full Set Bonus: Unstable Blood
+						TAG_String: §7Sometimes strikes nearby mobs
+						TAG_String: §7with lightning. It's unstable!
+						TAG_String: 
+						TAG_String: §6§lLEGENDARY HELMET
+					}
+					TAG_String('Name'): §6Godly Unstable Dragon Helmet
+				}
+				TAG_Compound('ExtraAttributes'): {7 Entries}
+				{
+					TAG_String('modifier'): godly
+					TAG_String('originTag'): CRAFTING_GRID_SHIFT
+					TAG_String('id'): UNSTABLE_DRAGON_HELMET
+					TAG_Compound('enchantments'): {2 Entries}
+					{
+						TAG_Int('growth'): 5
+						TAG_Int('protection'): 5
+					}
+					TAG_String('uuid'): b6bd40be-55ea-4116-9166-388e3d84990f
+					TAG_Int('anvil_uses'): 1
+					TAG_String('timestamp'): 10/12/19 6:34 AM
+				}
+			}
+			TAG_Short('Damage'): 3
+		}
+	}
+}

@@ -1,0 +1,1215 @@
+NBTFile: {1 Entries}
+{
+	TAG_List('i'): [36 TAG_Compound(s)]
+	{
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 277
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [21 TAG_String(s)]
+					{
+						TAG_String: §7Damage: §c+120
+						TAG_String: §7Strength: §c+132 §9(+32)
+						TAG_String: §7Bonus Attack Speed: §c+3% §9(+3%)
+						TAG_String: §7Intelligence: §a+88 §9(+80) §d(+8)
+						TAG_String:  §9[§b✎§9]
+						TAG_String: 
+						TAG_String: §9§d§lUltimate Wise V
+						TAG_String: §7Reduces the ability mana cost of
+						TAG_String: §7this item by §a50%§7.
+						TAG_String: §9Telekinesis I
+						TAG_String: §7Block and mob drops go directly
+						TAG_String: §7into your inventory.
+						TAG_String: 
+						TAG_String: §b§l⦾ §6Ability: Instant Transmission §e§lRIGHT CLICK
+						TAG_String: §7Teleport §a12 blocks§7 ahead of
+						TAG_String: §7you and gain §a+50 §f✦ Speed§7
+						TAG_String: §7for §a3 seconds§7.
+						TAG_String: §8Mana Cost: §323
+						TAG_String: 
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §5§lEPIC SWORD
+					}
+					TAG_String('Name'): §5Heroic Aspect of the Void
+				}
+				TAG_Compound('ExtraAttributes'): {10 Entries}
+				{
+					TAG_Int('tuned_transmission'): 4
+					TAG_Compound('gems'): {1 Entries}
+					{
+						TAG_String('SAPPHIRE_0'): FINE
+					}
+					TAG_String('modifier'): heroic
+					TAG_String('power_ability_scroll'): SAPPHIRE_POWER_SCROLL
+					TAG_String('originTag'): ASPECT_OF_THE_END
+					TAG_String('id'): ASPECT_OF_THE_VOID
+					TAG_Compound('enchantments'): {2 Entries}
+					{
+						TAG_Int('ultimate_wise'): 5
+						TAG_Int('telekinesis'): 1
+					}
+					TAG_String('uuid'): 75649f80-4c9b-4e91-9f7f-13ee3bd7cf97
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 9/8/21 8:13 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 397
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [1 TAG_Compound(s)]
+				{
+					TAG_Compound: {2 Entries}
+					{
+						TAG_Short('lvl'): 5
+						TAG_Short('id'): 32
+					}
+				}
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('SkullOwner'): {2 Entries}
+				{
+					TAG_String('Id'): 4d32846a-7945-345a-8f48-f107f6c92b15
+					TAG_Compound('Properties'): {1 Entries}
+					{
+						TAG_List('textures'): [1 TAG_Compound(s)]
+						{
+							TAG_Compound: {1 Entries}
+							{
+								TAG_String('Value'): ewogICJ0aW1lc3RhbXAiIDogMTYyMDIzOTE2MTcwMywKICAicHJvZmlsZUlkIiA6ICI5ZDIyZGRhOTVmZGI0MjFmOGZhNjAzNTI1YThkZmE4ZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYWZlRHJpZnQ0OCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS83YmYwMWMxOThmNmUxNjk2NWUyMzAyMzVjZDIyYTVhOWY0YTQwZTQwOTQxMjM0NDc4OTQ4ZmY5YTU2ZTUxNzc1IgogICAgfQogIH0KfQ
+							}
+						}
+					}
+				}
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [44 TAG_String(s)]
+					{
+						TAG_String: §8Breaking Power 9
+						TAG_String: 
+						TAG_String: §7Damage: §c+200
+						TAG_String: §7Defense: §a+14 §d(+14)
+						TAG_String: §7Intelligence: §a+10 §d(+10)
+						TAG_String: §7Mining Speed: §a+1,705 §9(+60) §d(+45)
+						TAG_String: §7Mining Fortune: §a+25 §d(+25)
+						TAG_String: §7Pristine: §a+6.2 §d(+1.2)
+						TAG_String:  §9[§a☘§9] §9[§6⸕§9] §9[§e✧§9] §9[§b✎§9] §9[§5❈§9]
+						TAG_String: 
+						TAG_String: §9Compact VII §877,529
+						TAG_String: §9Efficiency V
+						TAG_String: §9Experience IV
+						TAG_String: §9Fortune IV
+						TAG_String: §9Pristine V
+						TAG_String: §9Telekinesis I
+						TAG_String: 
+						TAG_String: §7§7Harness the true power of the
+						TAG_String: §7§dGemstones§7! Each gemstone placed in
+						TAG_String: §7here will boost its associated
+						TAG_String: §7§astat§7.
+						TAG_String: 
+						TAG_String: §7§eCan be used as both a §csword §eand
+						TAG_String: §ea §9pickaxe§e.
+						TAG_String: 
+						TAG_String: §7§7Your Gemstones:
+						TAG_String:   §aJade §7(§6+25☘§7)
+						TAG_String:   §6Amber §7(§6+45⸕§7)
+						TAG_String:   §eTopaz §7(§5+1.2✧§7)
+						TAG_String:   §bSapphire §7(§b+10✎§7)
+						TAG_String:   §5Amethyst §7(§a+14❈§7)
+						TAG_String: 
+						TAG_String: §6Ability: Mining Speed Boost §e§lRIGHT CLICK
+						TAG_String: §7Grants §a+§a300%§7 §6⸕ Mining
+						TAG_String: §6Speed §7for §a20s§7.
+						TAG_String: §8Cooldown: §a96s
+						TAG_String: 
+						TAG_String: §9Auspicious Bonus
+						TAG_String: §7Grants §a+8 §6☘ Mining
+						TAG_String: §6Fortune§7, which increases your
+						TAG_String: §7chance for multiple drops.
+						TAG_String: 
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §d§l§ka§r §d§l§d§lMYTHIC GAUNTLET §d§l§ka
+					}
+					TAG_String('Name'): §dAuspicious Gemstone Gauntlet
+				}
+				TAG_Compound('ExtraAttributes'): {10 Entries}
+				{
+					TAG_Int('rarity_upgrades'): 1
+					TAG_Compound('gems'): {5 Entries}
+					{
+						TAG_String('JADE_0'): FINE
+						TAG_String('AMBER_0'): FINE
+						TAG_String('SAPPHIRE_0'): FINE
+						TAG_String('AMETHYST_0'): FINE
+						TAG_String('TOPAZ_0'): FINE
+					}
+					TAG_String('modifier'): auspicious
+					TAG_Int('compact_blocks'): 77529
+					TAG_String('originTag'): QUICK_CRAFTING
+					TAG_String('id'): GEMSTONE_GAUNTLET
+					TAG_Compound('enchantments'): {6 Entries}
+					{
+						TAG_Int('efficiency'): 5
+						TAG_Int('fortune'): 4
+						TAG_Int('compact'): 7
+						TAG_Int('pristine'): 5
+						TAG_Int('telekinesis'): 1
+						TAG_Int('experience'): 4
+					}
+					TAG_String('uuid'): 288d33f2-babb-44bb-8b1c-e0b472ee9c53
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 10/27/21 12:24 AM
+				}
+			}
+			TAG_Short('Damage'): 3
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 276
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [29 TAG_String(s)]
+					{
+						TAG_String: §7Damage: §c+852.5 §e(+30)
+						TAG_String: §7Strength: §c+331 §e(+30) §9(+196) §d(+5)
+						TAG_String: §7Crit Damage: §c+30%
+						TAG_String: §7Intelligence: §a+310 §d(+10)
+						TAG_String:  §9[§d❁§9] §9[§b✎§9] §8[§7✎§8]
+						TAG_String: 
+						TAG_String: §9§d§lOne For All I
+						TAG_String: §7Removes all other enchants but
+						TAG_String: §7increases your weapon damage by
+						TAG_String: §7§a210%§7.
+						TAG_String: §9Telekinesis I
+						TAG_String: §7Block and mob drops go directly
+						TAG_String: §7into your inventory.
+						TAG_String: 
+						TAG_String: §7Deal §a+250% §7damage to Endermen§7.
+						TAG_String: 
+						TAG_String: §c§l⦾ §6Ability: Soulcry §e§lRIGHT CLICK
+						TAG_String: §7Gain §c+400⫽ Ferocity §7against
+						TAG_String: §7Endermen for §a4s
+						TAG_String: §7§8Soulflow Cost: §32
+						TAG_String: §8Mana Cost: §3200
+						TAG_String: §8Cooldown: §a4s
+						TAG_String: 
+						TAG_String: §9Withered Bonus
+						TAG_String: §7Grants §a+1 §c❁ Strength §7per
+						TAG_String: §7§cCatacombs §7level.
+						TAG_String: 
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §d§l§ka§r §d§l§d§lMYTHIC SWORD §d§l§ka
+					}
+					TAG_String('Name'): §dWithered Atomsplit Katana
+				}
+				TAG_Compound('ExtraAttributes'): {11 Entries}
+				{
+					TAG_Int('rarity_upgrades'): 1
+					TAG_Int('hot_potato_count'): 15
+					TAG_Compound('gems'): {2 Entries}
+					{
+						TAG_String('JASPER_0'): FINE
+						TAG_String('SAPPHIRE_0'): FINE
+					}
+					TAG_String('modifier'): withered
+					TAG_String('power_ability_scroll'): RUBY_POWER_SCROLL
+					TAG_String('originTag'): VORPAL_KATANA
+					TAG_String('id'): ATOMSPLIT_KATANA
+					TAG_Compound('enchantments'): {2 Entries}
+					{
+						TAG_Int('telekinesis'): 1
+						TAG_Int('ultimate_one_for_all'): 1
+					}
+					TAG_String('uuid'): 7d6e2176-25a6-4337-9dd3-3f7ff72123d6
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 7/6/21 8:05 AM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 280
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [11 TAG_String(s)]
+					{
+						TAG_String: §9§d§lUltimate Wise V
+						TAG_String: §7Reduces the ability mana cost of
+						TAG_String: §7this item by §a50%§7.
+						TAG_String: 
+						TAG_String: §6Ability: Big Heal §e§lRIGHT CLICK
+						TAG_String: §7Heal §c120❤§7/s for 7s.
+						TAG_String: §7§8Wand heals don't stack.
+						TAG_String: §8Mana Cost: §3100
+						TAG_String: §8Cooldown: §a1s
+						TAG_String: 
+						TAG_String: §5§lEPIC WAND
+					}
+					TAG_String('Name'): §5Wand of Restoration
+				}
+				TAG_Compound('ExtraAttributes'): {5 Entries}
+				{
+					TAG_String('originTag'): WAND_OF_MENDING
+					TAG_String('id'): WAND_OF_RESTORATION
+					TAG_Compound('enchantments'): {1 Entries}
+					{
+						TAG_Int('ultimate_wise'): 5
+					}
+					TAG_String('uuid'): aeb6e10b-b897-4e54-9655-c696804c2cbd
+					TAG_String('timestamp'): 10/18/21 4:40 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 283
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [23 TAG_String(s)]
+					{
+						TAG_String: §7Damage: §c+150
+						TAG_String: §7Strength: §c+80
+						TAG_String: §7Intelligence: §a+100
+						TAG_String:  §8[§7✎§8] §8[§8❤§8]
+						TAG_String: 
+						TAG_String: §9§d§lUltimate Wise V
+						TAG_String: §7Reduces the ability mana cost of
+						TAG_String: §7this item by §a50%§7.
+						TAG_String: 
+						TAG_String: §6Ability: Instant Heal §e§lRIGHT CLICK
+						TAG_String: §7Heal for §c168 §7+ §c5%❤ §7and
+						TAG_String: §7heal players within §a8 §7blocks
+						TAG_String: §7for §c56❤§7.
+						TAG_String: §8Mana Cost: §335
+						TAG_String: §8Charges: §e5 §8/ §a15s
+						TAG_String: 
+						TAG_String: §7Gain §a+2 §7extra max charges
+						TAG_String: §7when you play as a §aHealer §7in
+						TAG_String: §7Dungeons.
+						TAG_String: 
+						TAG_String: §7§8This item can be reforged!
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §6§lLEGENDARY SWORD
+					}
+					TAG_String('Name'): §6Florid Zombie Sword
+				}
+				TAG_Compound('ExtraAttributes'): {6 Entries}
+				{
+					TAG_String('originTag'): ORNATE_ZOMBIE_SWORD
+					TAG_String('id'): FLORID_ZOMBIE_SWORD
+					TAG_Compound('enchantments'): {1 Entries}
+					{
+						TAG_Int('ultimate_wise'): 5
+					}
+					TAG_String('uuid'): 1c7ca4b0-72e0-427e-a18e-b1c18b1c3a0f
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 9/20/21 11:53 AM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 303
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [21 TAG_String(s)]
+					{
+						TAG_String: §7Health: §a+75
+						TAG_String: §7Defense: §a+140
+						TAG_String: §7Speed: §a+15
+						TAG_String: 
+						TAG_String: §9Growth V
+						TAG_String: §7Grants §a+75 §c❤ Health§7.
+						TAG_String: §9Protection V
+						TAG_String: §7Grants §a+15 §a❈ Defense§7.
+						TAG_String: §9Thorns III
+						TAG_String: §7Grants a §a50% §7chance to
+						TAG_String: §7rebound §a9% §7of damage dealt
+						TAG_String: §7back at the attacker.
+						TAG_String: 
+						TAG_String: §6Ability: Mithril's Protection
+						TAG_String: §7§7Any damage taken is max §a40%
+						TAG_String: §a§7of the wearer's §c❤ Health§7.
+						TAG_String: §7Gain §cRegeneration §7when this
+						TAG_String: §7ability activates.
+						TAG_String: 
+						TAG_String: §7§8This item can be reforged!
+						TAG_String: §5§lEPIC CHESTPLATE
+					}
+					TAG_String('Name'): §5Mithril Coat
+				}
+				TAG_Compound('ExtraAttributes'): {5 Entries}
+				{
+					TAG_String('originTag'): QUICK_CRAFTING
+					TAG_String('id'): MITHRIL_COAT
+					TAG_Compound('enchantments'): {3 Entries}
+					{
+						TAG_Int('thorns'): 3
+						TAG_Int('protection'): 5
+						TAG_Int('growth'): 5
+					}
+					TAG_String('uuid'): f0074875-738c-4d63-8555-bb935bade1de
+					TAG_String('timestamp'): 5/7/21 4:49 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 397
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('SkullOwner'): {2 Entries}
+				{
+					TAG_String('Id'): cf814560-079b-3f43-98ce-d440ba66f2b3
+					TAG_Compound('Properties'): {1 Entries}
+					{
+						TAG_List('textures'): [1 TAG_Compound(s)]
+						{
+							TAG_Compound: {1 Entries}
+							{
+								TAG_String('Value'): eyJ0aW1lc3RhbXAiOjE1Njc5OTg1NDE4MDYsInByb2ZpbGVJZCI6IjQxZDNhYmMyZDc0OTQwMGM5MDkwZDU0MzRkMDM4MzFiIiwicHJvZmlsZU5hbWUiOiJNZWdha2xvb24iLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkzMzZkN2NjOTVjYmY2Njg5ZjVlOGM5NTQyOTRlYzhkMWVmYzQ5NGE0MDMxMzI1YmI0MjdiYzgxZDU2YTQ4NGQifX19
+							}
+						}
+					}
+				}
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [5 TAG_String(s)]
+					{
+						TAG_String: §6Ability: Whassup? §e§lRIGHT CLICK
+						TAG_String: §7Lets you call §5Maddox§7, when
+						TAG_String: §7he's not busy.
+						TAG_String: 
+						TAG_String: §a§lUNCOMMON
+					}
+					TAG_String('Name'): §aMaddox Batphone
+				}
+				TAG_Compound('ExtraAttributes'): {4 Entries}
+				{
+					TAG_String('originTag'): UNKNOWN
+					TAG_String('id'): AATROX_BATPHONE
+					TAG_String('uuid'): a510e3ad-48cb-494f-8179-4e4e3196a32b
+					TAG_String('timestamp'): 7/8/20 12:14 PM
+				}
+			}
+			TAG_Short('Damage'): 3
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 267
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [35 TAG_String(s)]
+					{
+						TAG_String: §7Gear Score: §d835 §8(2035)
+						TAG_String: §7Damage: §c+250 §8(+647.5)
+						TAG_String: §7Strength: §c+165 §9(+40) §8(+427.35)
+						TAG_String: §7Crit Damage: §c+50% §8(+129.5%)
+						TAG_String: §7Bonus Attack Speed: §c+5% §9(+5%)
+						TAG_String: §7Defense: §a+125 §8(+323.75)
+						TAG_String: §7Intelligence: §a+100 §9(+100) §8(+259)
+						TAG_String: 
+						TAG_String: §d§l§d§lUltimate Wise V§9, §9Critical V§9, §9Smite V
+						TAG_String: §9Telekinesis I
+						TAG_String: 
+						TAG_String: §6Ability: Raise Souls §e§lRIGHT CLICK
+						TAG_String: §7Monsters you kill using this
+						TAG_String: §7item will drop their soul. You
+						TAG_String: §7can click on their souls on the
+						TAG_String: §7ground using this item to absorb
+						TAG_String: §7them and then spawn them to
+						TAG_String: §7fight by your side.
+						TAG_String: §7
+						TAG_String: §7Mana cost is based on the power
+						TAG_String: §7of the monsters that you summon.
+						TAG_String: §7Shift right-click to view and
+						TAG_String: §7remove souls from this item. If
+						TAG_String: §7your summoned monster dies the
+						TAG_String: §7soul will be removed.
+						TAG_String: §8Cooldown: §a1s
+						TAG_String: 
+						TAG_String: §7Max Souls: §d2
+						TAG_String: 
+						TAG_String: §7Absorbed Souls:
+						TAG_String: §8- §cThorlon §7Lv25
+						TAG_String: §8- §cBembo §7Lv25
+						TAG_String: 
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §6§lLEGENDARY DUNGEON SWORD
+					}
+					TAG_String('Name'): §6Heroic Necromancer Sword
+				}
+				TAG_Compound('ExtraAttributes'): {8 Entries}
+				{
+					TAG_String('modifier'): heroic
+					TAG_String('originTag'): UNKNOWN
+					TAG_List('necromancer_souls'): [2 TAG_Compound(s)]
+					{
+						TAG_Compound: {1 Entries}
+						{
+							TAG_String('mob_id'): MASTER_CRYPT_UNDEAD_THORLON_25
+						}
+						TAG_Compound: {1 Entries}
+						{
+							TAG_String('mob_id'): MASTER_CRYPT_UNDEAD_BEMBO_25
+						}
+					}
+					TAG_String('id'): NECROMANCER_SWORD
+					TAG_Compound('enchantments'): {4 Entries}
+					{
+						TAG_Int('critical'): 5
+						TAG_Int('smite'): 5
+						TAG_Int('ultimate_wise'): 5
+						TAG_Int('telekinesis'): 1
+					}
+					TAG_String('uuid'): d0aedcfc-5162-43dd-9c4a-3aacbe41c7ed
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 11/3/21 9:23 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 399
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {3 Entries}
+			{
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [5 TAG_String(s)]
+					{
+						TAG_String: §7View all of your SkyBlock
+						TAG_String: §7progress, including your Skills,
+						TAG_String: §7Collections, Recipes, and more!
+						TAG_String: 
+						TAG_String: §eClick to open!
+					}
+					TAG_String('Name'): §aSkyBlock Menu §7(Right Click)
+				}
+				TAG_Compound('ExtraAttributes'): {1 Entries}
+				{
+					TAG_String('id'): SKYBLOCK_MENU
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 423
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {3 Entries}
+			{
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [14 TAG_String(s)]
+					{
+						TAG_String: §7Damage: §c+125
+						TAG_String: §7Strength: §c+25
+						TAG_String: 
+						TAG_String: §6Ability: ME SMASH HEAD §e§lRIGHT CLICK
+						TAG_String: §7Your next attack deals §cdouble
+						TAG_String: §cdamage §7and weakens animals,
+						TAG_String: §7making them deal §c-35% §7damage
+						TAG_String: §7for §a30 §7seconds.
+						TAG_String: §7§8Debuff doesn't stack.
+						TAG_String: §8Mana Cost: §3100
+						TAG_String: 
+						TAG_String: §7§8This item can be reforged!
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §9§lRARE SWORD
+					}
+					TAG_String('Name'): §9Edible Mace
+				}
+				TAG_Compound('ExtraAttributes'): {5 Entries}
+				{
+					TAG_String('originTag'): QUICK_CRAFTING
+					TAG_String('id'): EDIBLE_MACE
+					TAG_String('uuid'): 34afefc7-5914-47dd-9f46-2634e0ed3514
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 11/7/21 11:29 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 276
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [27 TAG_String(s)]
+					{
+						TAG_String: §7Gear Score: §d654 §8(1774)
+						TAG_String: §7Damage: §c+140 §e(+20) §8(+432.6)
+						TAG_String: §7Strength: §c+256 §e(+20) §9(+136) §8(+791.04)
+						TAG_String: §7Crit Damage: §c+50% §8(+154.5%)
+						TAG_String: §7Intelligence: §a+200 §8(+618)
+						TAG_String:  §8[§7❁§8]
+						TAG_String: 
+						TAG_String: §9Cleave V§9, §9Critical V§9, §9Ender Slayer V
+						TAG_String: §9Execute V§9, §9Experience III§9, §9Fire Aspect II
+						TAG_String: §9First Strike IV§9, §9Lethality V§9, §9Looting III
+						TAG_String: §9Scavenger III§9, §9Smite VI§9, §9Syphon III
+						TAG_String: §9Telekinesis I§9, §9Thunderlord V§9, §9Titan Killer V
+						TAG_String: §9Venomous V
+						TAG_String: 
+						TAG_String: §2◆ Pestilence Rune III
+						TAG_String: 
+						TAG_String: §7Heal §c10❤ §7per hit.
+						TAG_String: §7Deal §a+200% §7damage to Zombies§7.
+						TAG_String: §7§7Receive §a20% §7less damage
+						TAG_String: §7from Zombies§7 when held.
+						TAG_String: 
+						TAG_String: §9Withered Bonus
+						TAG_String: §7Grants §a+1 §c❁ Strength §7per
+						TAG_String: §7§cCatacombs §7level.
+						TAG_String: 
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §5§lEPIC DUNGEON SWORD
+					}
+					TAG_String('Name'): §5Withered Reaper Falchion §6✪§6✪§6✪§6✪§6✪
+				}
+				TAG_Compound('ExtraAttributes'): {11 Entries}
+				{
+					TAG_Int('hot_potato_count'): 10
+					TAG_Compound('runes'): {1 Entries}
+					{
+						TAG_Int('ZOMBIE_SLAYER'): 3
+					}
+					TAG_Compound('gems'): {0 Entries}
+					TAG_String('modifier'): withered
+					TAG_Int('dungeon_item_level'): 5
+					TAG_String('originTag'): REAPER_SWORD
+					TAG_String('id'): REAPER_SWORD
+					TAG_Compound('enchantments'): {16 Entries}
+					{
+						TAG_Int('critical'): 5
+						TAG_Int('cleave'): 5
+						TAG_Int('smite'): 6
+						TAG_Int('looting'): 3
+						TAG_Int('syphon'): 3
+						TAG_Int('telekinesis'): 1
+						TAG_Int('scavenger'): 3
+						TAG_Int('ender_slayer'): 5
+						TAG_Int('fire_aspect'): 2
+						TAG_Int('experience'): 3
+						TAG_Int('execute'): 5
+						TAG_Int('first_strike'): 4
+						TAG_Int('venomous'): 5
+						TAG_Int('thunderlord'): 5
+						TAG_Int('titan_killer'): 5
+						TAG_Int('lethality'): 5
+					}
+					TAG_String('uuid'): fcc7648c-d0a5-495b-8acc-8704482f3245
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 4/23/21 9:38 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 261
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [21 TAG_String(s)]
+					{
+						TAG_String: §7Damage: §c+160
+						TAG_String: §7Strength: §c+75 §9(+25)
+						TAG_String: §7Crit Chance: §c+13% §9(+13%)
+						TAG_String: §7Crit Damage: §c+50% §9(+50%)
+						TAG_String: 
+						TAG_String: §9Chance III
+						TAG_String: §9Dragon Tracer V
+						TAG_String: §9Flame I
+						TAG_String: §9Infinite Quiver V
+						TAG_String: §9Piercing I
+						TAG_String: §9Power V
+						TAG_String: §9Snipe III
+						TAG_String: §9Telekinesis I
+						TAG_String: 
+						TAG_String: §6Ability: Triple Shot
+						TAG_String: §7Shoots 3 arrows at a time! The 2
+						TAG_String: §7extra arrows deal §a40% §7of the
+						TAG_String: §7damage and home to targets.
+						TAG_String: 
+						TAG_String: §8§l* §8Co-op Soulbound §8§l*
+						TAG_String: §6§lLEGENDARY BOW
+					}
+					TAG_String('Name'): §6Unreal Runaan's Bow
+				}
+				TAG_Compound('ExtraAttributes'): {7 Entries}
+				{
+					TAG_String('modifier'): unreal
+					TAG_String('originTag'): QUICK_CRAFTING
+					TAG_String('id'): RUNAANS_BOW
+					TAG_Compound('enchantments'): {8 Entries}
+					{
+						TAG_Int('chance'): 3
+						TAG_Int('piercing'): 1
+						TAG_Int('infinite_quiver'): 5
+						TAG_Int('power'): 5
+						TAG_Int('snipe'): 3
+						TAG_Int('telekinesis'): 1
+						TAG_Int('flame'): 1
+						TAG_Int('aiming'): 5
+					}
+					TAG_String('uuid'): 0bcdd7f7-fab8-416d-9d28-67cc66e3a018
+					TAG_Byte('donated_museum'): 1
+					TAG_String('timestamp'): 7/28/21 1:10 AM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 269
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [16 TAG_String(s)]
+					{
+						TAG_String: §7Hold in your hand to reveal and
+						TAG_String: §7dig out §eGriffin Burrows §7in
+						TAG_String: §7the hub, which hold both
+						TAG_String: §7§6treasures §7and §cdangers§7.
+						TAG_String: 
+						TAG_String: §6Ability: Echo §e§lRIGHT CLICK
+						TAG_String: §7Show the way to the next or
+						TAG_String: §7nearby Griffin burrow.
+						TAG_String: §8Mana Cost: §3100
+						TAG_String: §8Cooldown: §a3s
+						TAG_String: 
+						TAG_String: §7Only works while Diana's
+						TAG_String: §7§2Mythological Ritual §7is
+						TAG_String: §7active.
+						TAG_String: 
+						TAG_String: §9§lRARE
+					}
+					TAG_String('Name'): §9Ancestral Spade
+				}
+				TAG_Compound('ExtraAttributes'): {1 Entries}
+				{
+					TAG_String('id'): ANCESTRAL_SPADE
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 397
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('SkullOwner'): {2 Entries}
+				{
+					TAG_String('Id'): 34a5254e-6e8a-3dc2-b1b8-e21b3f66d7f9
+					TAG_Compound('Properties'): {1 Entries}
+					{
+						TAG_List('textures'): [1 TAG_Compound(s)]
+						{
+							TAG_Compound: {1 Entries}
+							{
+								TAG_String('Value'): ewogICJ0aW1lc3RhbXAiIDogMTYyMDA3MDUxMDA5NCwKICAicHJvZmlsZUlkIiA6ICI1N2IzZGZiNWY4YTY0OWUyOGI1NDRlNGZmYzYzMjU2ZiIsCiAgInByb2ZpbGVOYW1lIiA6ICJYaWthcm8iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTViYTgwNGI3YWU5MmM2NWIyZjQxZDE4YmU4OTlhM2JkMTM5NzcyZTNlM2M4MWMyZmM4YWRkYmIyNzUzNjk1MiIKICAgIH0KICB9Cn0=
+							}
+						}
+					}
+				}
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [7 TAG_String(s)]
+					{
+						TAG_String: §7Gemstone pickups go directly
+						TAG_String: §7into your sacks.
+						TAG_String: 
+						TAG_String: §7Capacity: §e2,560,000 per gemstone type
+						TAG_String: §8Sacks sum their capacity.
+						TAG_String: 
+						TAG_String: §5§lEPIC
+					}
+					TAG_String('Name'): §5Large Gemstone Sack
+				}
+				TAG_Compound('ExtraAttributes'): {4 Entries}
+				{
+					TAG_String('originTag'): QUICK_CRAFTING
+					TAG_String('id'): LARGE_GEMSTONE_SACK
+					TAG_String('uuid'): dd48e679-8976-4103-adc9-0001f6184d68
+					TAG_String('timestamp'): 10/28/21 8:14 PM
+				}
+			}
+			TAG_Short('Damage'): 3
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 397
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('SkullOwner'): {2 Entries}
+				{
+					TAG_String('Id'): f84c9a00-0a4e-3fac-8d75-b18e23157f17
+					TAG_Compound('Properties'): {1 Entries}
+					{
+						TAG_List('textures'): [1 TAG_Compound(s)]
+						{
+							TAG_Compound: {1 Entries}
+							{
+								TAG_String('Value'): ewogICJ0aW1lc3RhbXAiIDogMTYyMTkwNjA2NjAzNywKICAicHJvZmlsZUlkIiA6ICI0MWQzYWJjMmQ3NDk0MDBjOTA5MGQ1NDM0ZDAzODMxYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNZWdha2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDY4YzFmYTRhMjFiYTRmMjdkY2IzMGFiM2JmYWIwZGMyMmExZTRmY2Y5ZWQxMmMxZDdhNzBmZWIwN2Y4ZDdhZSIKICAgIH0KICB9Cn0=
+							}
+						}
+					}
+				}
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [17 TAG_String(s)]
+					{
+						TAG_String: §7Strength: §c+4 §9(+4)
+						TAG_String: §7Crit Damage: §c+5% §9(+5%)
+						TAG_String: 
+						TAG_String: §7Internalized: §314,506⸎ Soulflow
+						TAG_String: 
+						TAG_String: §6Ability: Overflow Mana
+						TAG_String: §7When leaving combat, convert up
+						TAG_String: §7to §34⸎ Soulflow §7into §3400ʬ
+						TAG_String: §3Overflow Mana§7.
+						TAG_String: 
+						TAG_String: §7Enabled: §aOn
+						TAG_String: §eRight-click to toggle!
+						TAG_String: 
+						TAG_String: §7§8Soulflow from abilities is
+						TAG_String: §8drained from your internalized ⸎.
+						TAG_String: 
+						TAG_String: §9§lRARE ACCESSORY
+					}
+					TAG_String('Name'): §9Shaded Soulflow Battery
+				}
+				TAG_Compound('ExtraAttributes'): {5 Entries}
+				{
+					TAG_String('modifier'): shaded
+					TAG_String('originTag'): SOULFLOW_PILE
+					TAG_String('id'): SOULFLOW_BATTERY
+					TAG_String('uuid'): 37cd6a23-871a-42e1-a314-39ddfe9b9e5f
+					TAG_String('timestamp'): 6/1/21 1:26 PM
+				}
+			}
+			TAG_Short('Damage'): 3
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 311
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [15 TAG_String(s)]
+					{
+						TAG_String: §7Health: §a+180
+						TAG_String: §7Defense: §a+70
+						TAG_String: 
+						TAG_String: §6Full Set Bonus: Trolling The Reaper
+						TAG_String: §7Healing Wands heal §a+50%§7.
+						TAG_String: §7Gain §a+100❈ §7against Zombies.
+						TAG_String: 
+						TAG_String: §6Piece Bonus: Zombie Bulwark
+						TAG_String: §7Kill Zombies to accumulate
+						TAG_String: §7defense against them.
+						TAG_String: §7Piece Bonus: §a+0❈
+						TAG_String: §7Next Upgrade: §a+20❈ §8(§a0§7/§c50§8)
+						TAG_String: 
+						TAG_String: §7§8This item can be reforged!
+						TAG_String: §5§lEPIC CHESTPLATE
+					}
+					TAG_String('Name'): §5Revenant Chestplate
+				}
+				TAG_Compound('ExtraAttributes'): {4 Entries}
+				{
+					TAG_String('originTag'): ZOMBIE_CHESTPLATE
+					TAG_String('id'): REVENANT_CHESTPLATE
+					TAG_String('uuid'): f735e56d-21d4-44fc-ab05-fc80d0f4e6af
+					TAG_String('timestamp'): 11/30/21 1:19 AM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 312
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [15 TAG_String(s)]
+					{
+						TAG_String: §7Health: §a+120
+						TAG_String: §7Defense: §a+50
+						TAG_String: 
+						TAG_String: §6Full Set Bonus: Trolling The Reaper
+						TAG_String: §7Healing Wands heal §a+50%§7.
+						TAG_String: §7Gain §a+100❈ §7against Zombies.
+						TAG_String: 
+						TAG_String: §6Piece Bonus: Zombie Bulwark
+						TAG_String: §7Kill Zombies to accumulate
+						TAG_String: §7defense against them.
+						TAG_String: §7Piece Bonus: §a+0❈
+						TAG_String: §7Next Upgrade: §a+20❈ §8(§a0§7/§c50§8)
+						TAG_String: 
+						TAG_String: §7§8This item can be reforged!
+						TAG_String: §5§lEPIC LEGGINGS
+					}
+					TAG_String('Name'): §5Revenant Leggings
+				}
+				TAG_Compound('ExtraAttributes'): {4 Entries}
+				{
+					TAG_String('originTag'): CRAFTING_GRID_COLLECT
+					TAG_String('id'): REVENANT_LEGGINGS
+					TAG_String('uuid'): 760172e8-b87e-40e1-aab7-76886c02783b
+					TAG_String('timestamp'): 11/30/21 1:12 AM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 313
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [15 TAG_String(s)]
+					{
+						TAG_String: §7Health: §a+100
+						TAG_String: §7Defense: §a+30
+						TAG_String: 
+						TAG_String: §6Full Set Bonus: Trolling The Reaper
+						TAG_String: §7Healing Wands heal §a+50%§7.
+						TAG_String: §7Gain §a+100❈ §7against Zombies.
+						TAG_String: 
+						TAG_String: §6Piece Bonus: Zombie Bulwark
+						TAG_String: §7Kill Zombies to accumulate
+						TAG_String: §7defense against them.
+						TAG_String: §7Piece Bonus: §a+0❈
+						TAG_String: §7Next Upgrade: §a+20❈ §8(§a0§7/§c50§8)
+						TAG_String: 
+						TAG_String: §7§8This item can be reforged!
+						TAG_String: §5§lEPIC BOOTS
+					}
+					TAG_String('Name'): §5Revenant Boots
+				}
+				TAG_Compound('ExtraAttributes'): {4 Entries}
+				{
+					TAG_String('originTag'): CRAFTING_GRID_COLLECT
+					TAG_String('id'): REVENANT_BOOTS
+					TAG_String('uuid'): 0da94828-3f74-4675-a29c-74be07f02f6a
+					TAG_String('timestamp'): 11/30/21 1:12 AM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 397
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('SkullOwner'): {2 Entries}
+				{
+					TAG_String('Id'): c1b895a1-70b6-3930-9de5-5361995735d1
+					TAG_Compound('Properties'): {1 Entries}
+					{
+						TAG_List('textures'): [1 TAG_Compound(s)]
+						{
+							TAG_Compound: {1 Entries}
+							{
+								TAG_String('Value'): ewogICJ0aW1lc3RhbXAiIDogMTU5MTEwMjk0NTU4OSwKICAicHJvZmlsZUlkIiA6ICI0MWQzYWJjMmQ3NDk0MDBjOTA5MGQ1NDM0ZDAzODMxYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNZWdha2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTE1ZmNlYmJiZTAyZmRiNzJhY2QyMDk1ZDllZGZjZWEwOTVlNjA0YjM2ODJkYjg4OTYzYjViODNiMjkzOWI2NyIKICAgIH0KICB9Cn0=
+							}
+						}
+					}
+				}
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [19 TAG_String(s)]
+					{
+						TAG_String: §7Item pickups go directly into
+						TAG_String: §7your sacks.
+						TAG_String: 
+						TAG_String: §7§7Items: §aCoal§7,
+						TAG_String: §7§aCobblestone§7, §aDiamond§7,
+						TAG_String: §7§aEmerald§7, §aEnd Stone§7,
+						TAG_String: §7§aGlowstone Dust§7, §aGold
+						TAG_String: §aIngot§7, §aGravel§7, §aHard
+						TAG_String: §aStone§7, §aIron Ingot§7, §aLapis
+						TAG_String: §aLazuli§7, §aMithril§7, §aNether
+						TAG_String: §aQuartz§7, §aNetherrack§7,
+						TAG_String: §7§aObsidian§7, §aRedstone§7,
+						TAG_String: §7§aSand§7, §aStarfall§7, §aStone§7,
+						TAG_String: §7§aTitanium§7, §aTreasurite
+						TAG_String: 
+						TAG_String: §7Capacity: §e20,160 per item
+						TAG_String: §8Sacks sum their capacity.
+						TAG_String: 
+						TAG_String: §5§lEPIC
+					}
+					TAG_String('Name'): §5Large Mining Sack
+				}
+				TAG_Compound('ExtraAttributes'): {4 Entries}
+				{
+					TAG_String('originTag'): LARGE_MINING_SACK
+					TAG_String('id'): LARGE_MINING_SACK
+					TAG_String('uuid'): 2ffb03ce-3cb5-4c0d-bf82-bf55ebd45251
+					TAG_String('timestamp'): 7/27/21 10:24 AM
+				}
+			}
+			TAG_Short('Damage'): 3
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 158
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_List('ench'): [0 _TAG_End(s)]
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [12 TAG_String(s)]
+					{
+						TAG_String: §7Strength: §c+5 §9(+5)
+						TAG_String: §7Crit Damage: §c+6% §9(+6%)
+						TAG_String: 
+						TAG_String: §7Automatically turns certain
+						TAG_String: §7materials in your inventory into
+						TAG_String: §7their enchanted form.
+						TAG_String: 
+						TAG_String: §eRight-click to configure!
+						TAG_String: 
+						TAG_String: §8Does not grant carpentry XP!
+						TAG_String: 
+						TAG_String: §5§lEPIC ACCESSORY
+					}
+					TAG_String('Name'): §5Shaded Personal Compactor 6000
+				}
+				TAG_Compound('ExtraAttributes'): {12 Entries}
+				{
+					TAG_String('personal_compact_0'): ENCHANTED_ENDER_PEARL
+					TAG_String('personal_compact_2'): ENCHANTED_MELON
+					TAG_String('personal_compact_1'): ENCHANTED_MELON_BLOCK
+					TAG_String('modifier'): shaded
+					TAG_String('originTag'): PERSONAL_COMPACTOR_5000
+					TAG_String('id'): PERSONAL_COMPACTOR_6000
+					TAG_String('personal_compact_4'): ENCHANTED_COBBLESTONE
+					TAG_String('uuid'): 73af3c02-b8ee-40a5-a19f-8c45cb756726
+					TAG_String('personal_compact_3'): ENCHANTED_DIAMOND_BLOCK
+					TAG_String('personal_compact_6'): ENCHANTED_MITHRIL
+					TAG_String('timestamp'): 7/29/21 12:15 AM
+					TAG_String('personal_compact_5'): ENCHANTED_GOLD
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {0 Entries}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 279
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {5 Entries}
+			{
+				TAG_List('ench'): [1 TAG_Compound(s)]
+				{
+					TAG_Compound: {2 Entries}
+					{
+						TAG_Short('lvl'): 5
+						TAG_Short('id'): 32
+					}
+				}
+				TAG_Byte('Unbreakable'): 1
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [24 TAG_String(s)]
+					{
+						TAG_String: §7Speed: §a+13 §9(+13)
+						TAG_String: 
+						TAG_String: §9Efficiency V
+						TAG_String: §7Increases how quickly your tool
+						TAG_String: §7breaks blocks.
+						TAG_String: §9Telekinesis I
+						TAG_String: §7Block and mob drops go directly
+						TAG_String: §7into your inventory.
+						TAG_String: 
+						TAG_String: §7Gain §a+5% §7Farming exp from melons
+						TAG_String: 
+						TAG_String: §6Ability: Roll em'
+						TAG_String: §7Every melon you break, you
+						TAG_String: §7make a wish to §dRNGesus
+						TAG_String: §d§7which may grant you with a
+						TAG_String: §7few or TONS of extra melons!
+						TAG_String: 
+						TAG_String: §9Blessed Bonus
+						TAG_String: §7Gain §a+4% §7Farming exp.
+						TAG_String: §7Grants §a+13 §6☘ Farming
+						TAG_String: §6Fortune§7, which increases your
+						TAG_String: §7chance for double crops.
+						TAG_String: 
+						TAG_String: §5§lEPIC AXE
+					}
+					TAG_String('Name'): §5Blessed Melon Dicer
+				}
+				TAG_Compound('ExtraAttributes'): {6 Entries}
+				{
+					TAG_String('modifier'): blessed
+					TAG_String('originTag'): SHOP_PURCHASE
+					TAG_String('id'): MELON_DICER
+					TAG_Compound('enchantments'): {2 Entries}
+					{
+						TAG_Int('efficiency'): 5
+						TAG_Int('telekinesis'): 1
+					}
+					TAG_String('uuid'): 2d5aae38-0f5e-4f9c-92ca-5c163f52938b
+					TAG_String('timestamp'): 11/10/21 10:20 PM
+				}
+			}
+			TAG_Short('Damage'): 0
+		}
+		TAG_Compound: {4 Entries}
+		{
+			TAG_Short('id'): 397
+			TAG_Byte('Count'): 1
+			TAG_Compound('tag'): {4 Entries}
+			{
+				TAG_Int('HideFlags'): 254
+				TAG_Compound('SkullOwner'): {2 Entries}
+				{
+					TAG_String('Id'): c004afdb-b7a1-3bb6-a766-8a772b28ef2c
+					TAG_Compound('Properties'): {1 Entries}
+					{
+						TAG_List('textures'): [1 TAG_Compound(s)]
+						{
+							TAG_Compound: {1 Entries}
+							{
+								TAG_String('Value'): ewogICJ0aW1lc3RhbXAiIDogMTU5MTEwMjUzNTAxMiwKICAicHJvZmlsZUlkIiA6ICI0MWQzYWJjMmQ3NDk0MDBjOTA5MGQ1NDM0ZDAzODMxYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJNZWdha2xvb24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY4MzViODk0MWZlMzE5OTMxNzQ5Yjg3ZmU4ZTg0YzVkMWY0YTI3MWI1ZmJjZTVlNzAwYTYwMDA0ZDg4MWY3OSIKICAgIH0KICB9Cn0=
+							}
+						}
+					}
+				}
+				TAG_Compound('display'): {2 Entries}
+				{
+					TAG_List('Lore'): [14 TAG_String(s)]
+					{
+						TAG_String: §7Item pickups go directly into
+						TAG_String: §7your sacks.
+						TAG_String: 
+						TAG_String: §7§7Items: §aBrown Mushroom§7,
+						TAG_String: §7§aCactus§7, §aCarrot§7, §aCocoa
+						TAG_String: §aBeans§7, §aMelon§7, §aNether
+						TAG_String: §aWart§7, §aPotato§7, §aPumpkin§7,
+						TAG_String: §7§aRed Mushroom§7, §aSeeds§7,
+						TAG_String: §7§aSugar Cane§7, §aWheat
+						TAG_String: 
+						TAG_String: §7Capacity: §e20,160 per item
+						TAG_String: §8Sacks sum their capacity.
+						TAG_String: 
+						TAG_String: §5§lEPIC
+					}
+					TAG_String('Name'): §5Large Agronomy Sack
+				}
+				TAG_Compound('ExtraAttributes'): {4 Entries}
+				{
+					TAG_String('originTag'): LARGE_AGRONOMY_SACK
+					TAG_String('id'): LARGE_AGRONOMY_SACK
+					TAG_String('uuid'): f30e9328-9622-4337-bfeb-e2996d382735
+					TAG_String('timestamp'): 3/28/21 8:11 PM
+				}
+			}
+			TAG_Short('Damage'): 3
+		}
+	}
+}

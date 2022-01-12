@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sword",
+  "name": "McMonkey26's Sword",
+  "description": "I made a sword!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["McMonkey26"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
