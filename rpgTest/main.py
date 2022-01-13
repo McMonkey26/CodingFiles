@@ -39,7 +39,7 @@ class weapon:
 elvenBlade = weapon('elvenBlade', 'Elven Blade', 'sword', 20, 'Normal', 10)
 elvenBow = weapon('elvenBow', 'Elven Bow', 'bow', 10, 'Projectile', 20)
 thievesKnife = weapon('thievesKnife', 'Thieve\'s Knive', 'dagger', 5, 'Normal', 3)
-
+print('hrm')
 julian = adventurer('Hawk Feather', 'Tabaxi', 'Rogue', 81, 6, 10, [elvenBlade, elvenBow, thievesKnife], 'Hawk')
 exAdvent = adventurer('Aragorn', 'Wood Elf', 'Druid', 94, 3, 30, [elvenBlade, elvenBow, thievesKnife])
 print('-')
