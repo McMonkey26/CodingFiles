@@ -40,11 +40,16 @@ while not message == 'stop':
         player.use('pick')
       elif case('chop') or case('c'):
         player.use('axe')
+      elif case('fight') or case('f'):
+        player.use('sword')
       elif case('sell') or case('s'):
         player.sell(args[1].lower(), ''.join(args[2:]))
       elif case('buy'):
         tool = (temp:=''.join(list(map(lambda x:x.capitalize(), args[1:]))))[0].lower()+temp[1:]
-        player.upgrade(vars(player.const)[tool])
+        try:
+          player.upgrade(vars(player.const)[tool])
+        except AttributeError:
+          print('Did not recognize tool "{}"'.format(' '.join(args[1:])))
       elif case('inventory') or case('inv') or case('i'):
         player.showInv()
       elif case('give'):
