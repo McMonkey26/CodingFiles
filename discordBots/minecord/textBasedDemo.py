@@ -100,7 +100,7 @@ class Player:
       print('too broke L')
       return None
     switch(tool.type)
-    if case('pick'):
+    if case('pickaxe'):
       self.pick = tool
     elif case('axe'):
       self.axe = tool
@@ -170,6 +170,8 @@ while not message == 'stop':
         player.upgrade(vars(player.const)[tool])
       elif case('inventory') or case('inv') or case('i'):
         player.showInv()
+      elif case('give'):
+        player.money += int(args[1])
   except IndexError:
     error += '\nInput not long enough'
   message = input()
