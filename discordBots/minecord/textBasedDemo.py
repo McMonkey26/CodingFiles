@@ -56,11 +56,12 @@ class Item:
     print(vars(self))
 
 class Tool:
-  def __init__(self, name, harvests):
+  def __init__(self, name, harvests, cost):
     self.name = name
     self.type = name.split()[1].lower()
     self.level = name.split()[0].lower()
     self.harvests = harvests
+    self.cost = cost
   def use(self):
     for material in self.harvests:
       material.harvest()
@@ -94,15 +95,16 @@ class Player:
       '{:20}'.format('Iron: {}'.format(self.const.iron.amount) if self.const.iron.amount > 0 else '')+
       '{:20}'.format('')+
       '{:20}'.format('Spruce: {}'.format(self.const.spruce.amount) if self.const.spruce.amount > 0 else ''))
-  def upgrade(self, type, tool, cost):
-    if cost > self.money:
+  def upgrade(self, tool):#type, tool, cost):
+    if tool.cost > self.money:
+      print('too broke L')
       return None
-    switch(type)
+    switch(tool.type)
     if case('pick'):
       self.pick = tool
     elif case('axe'):
       self.axe = tool
-    self.money -= cost
+    self.money -= tool.cost
   def use(self, tool):
     switch(tool)
     if case('pick'):
@@ -141,12 +143,12 @@ class Player:
       self.stone = Item(master, 'Stone', 0, 2, 1, 'ore')
       self.coal = Item(master, 'Coal', 0, 3, 2, 'ore')
       self.iron = Item(master, 'Iron', 0, 3, 2, 'ore')
-      self.woodPickaxe = Tool('Wood Pickaxe', [self.stone])
-      self.stonePickaxe = Tool('Stone Pickaxe', [self.stone, self.coal])
-      self.ironPickaxe = Tool('Iron Pickaxe', [self.stone, self.coal, self.iron])
-      self.woodAxe = Tool('Wood Axe', [self.oak])
-      self.stoneAxe = Tool('Stone Axe', [self.oak, self.birch])
-      self.ironAxe = Tool('Iron Axe', [self.birch, self.spruce])
+      self.woodPickaxe = Tool('Wood Pickaxe', [self.stone], 0)
+      self.stonePickaxe = Tool('Stone Pickaxe', [self.stone, self.coal], 1000)
+      self.ironPickaxe = Tool('Iron Pickaxe', [self.stone, self.coal, self.iron], 7500)
+      self.woodAxe = Tool('Wood Axe', [self.oak], 0)
+      self.stoneAxe = Tool('Stone Axe', [self.oak, self.birch], 1000)
+      self.ironAxe = Tool('Iron Axe', [self.birch, self.spruce], 7500)
 player = Player()
 message = input()
 while not message == 'stop':
@@ -162,7 +164,10 @@ while not message == 'stop':
       elif case('sell') or case('s'):
         player.sell(args[1].lower(), ''.join(args[2:]))
       elif case('buy'):
-        pass
+        tool = (temp:=''.join(list(map(lambda x:x.capitalize(), args[1:]))))[0].lower()+temp[1:]
+        # toolJoined = ''.join(tool)
+        # finalId = toolJoined[0].lower()+toolJoined[1:]
+        player.upgrade(vars(player.const)[tool])
       elif case('inventory') or case('inv') or case('i'):
         player.showInv()
   except IndexError:
