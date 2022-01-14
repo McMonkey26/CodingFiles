@@ -162,6 +162,7 @@ while not message == 'stop':
       elif case('sell') or case('s'):
         player.sell(args[1].lower(), ''.join(args[2:]))
       elif case('buy'):
+        pass
       elif case('inventory') or case('inv') or case('i'):
         player.showInv()
   except IndexError:
