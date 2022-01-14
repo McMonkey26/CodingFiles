@@ -1,5 +1,5 @@
 import random, os
-from switch import *
+from switch import switch, case
 import PySimpleGUI as sg
 os.chdir('/Users/jpollack/Desktop/CodingFiles/pokemonFiles')
 def print(*args, **kwargs):

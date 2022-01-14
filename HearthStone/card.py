@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import font
-from switch import *
+from switch import switch, case
 from PIL import ImageTk, Image
 import os, copy
 os.chdir('/Users/jpollack/Desktop/CodingFiles/HearthStone')

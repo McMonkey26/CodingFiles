@@ -1,5 +1,5 @@
 from pokemonLookUp import pokeDict, moveDict
-from switch import *
+from switch import switch, case
 def print(*args, **kwargs):
   import os, inspect, builtins
   builtins.print('{:20}'.format(lineFile:=f'{os.path.basename(__file__)}:{inspect.currentframe().f_back.f_lineno}')+' '.join(list(map(lambda x:str(x).replace('\n', '\n{:20}'.format(lineFile)), args))))

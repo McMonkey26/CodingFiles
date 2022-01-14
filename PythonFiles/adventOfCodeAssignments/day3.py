@@ -1,5 +1,5 @@
 import os
-from switch import * #switch is a file i made to have kinda knock-off switch case statements
+from switch import switch, case #switch is a file i made to have kinda knock-off switch case statements
 os.chdir('/Users/jpollack/Desktop/CodingFiles/PythonFiles/adventOfCodeAssignments')
 data = []
 with open('day3.txt', 'r') as file:

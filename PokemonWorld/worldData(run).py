@@ -20,7 +20,7 @@
 #20x20 window size
 
 import os, random
-from switch import *
+from switch import switch, case
 import battleGUI as battle
 import startGUI as start
 import tkinter as tk
