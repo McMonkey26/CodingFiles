@@ -1,4 +1,6 @@
 from switch import switch, case
+import json, os
+os.chdir('/Users/jpollack/Desktop/CodingFiles/repos/CodingFiles/discordBots/minecord')
 class Item:
   def __init__(self, master, name, drop, value, type):
     self.master = master
@@ -82,16 +84,6 @@ class Player:
       self.sword = tool
     self.money -= tool.cost
     print('Bought {} for ${}. You now have {}'.format(tool.name, tool.cost, self.money))
-  def use(self, tool):
-    switch(tool)
-    if case('pick'):
-      self.pick.use()
-    elif case('axe'):
-      self.axe.use()
-    elif case('sword'):
-      self.sword.use()
-    else:
-      print('Did not recognize tool "{}"'.format(tool))
   def sell(self, material, amt):
     sold = True
     switch(material.lower())
@@ -158,3 +150,31 @@ class Player:
       self.woodSword = Tool('Wood Sword', [self.rotten], 0)
       self.stoneSword = Tool('Stone Sword', [self.bone], 1000)
       self.ironSword = Tool('Iron Sword', [self.gunpowder], 7500)
+stats = {
+  'moons':4,
+  'choop':16
+}
+with open('profiles.json','w') as outfile:
+  json.dump(stats, outfile, indent=2)
+with open('profiles.json', 'r') as infile:
+  data = json.load(infile)
+  print(data)
+b32Ids = [
+  '2394AHFD',
+  '3KN54379',
+  'GHK3245H'
+]
+b64Ids = [
+  'b34DSF67',
+  'a8n9SB98',
+  'SD90yds0'
+]
+def testId():
+  global ids
+  import random
+  base32choice = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'
+  base64choice = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/'
+  newId32 = ''
+  newId64 = ''
+  for i in range(8):
+    newId += random.choice(base32choice)
