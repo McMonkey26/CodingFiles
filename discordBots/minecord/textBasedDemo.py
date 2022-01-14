@@ -37,11 +37,11 @@ while not message == 'stop':
       args[0] = args[0][1:]
       switch(args[0])
       if case('mine') or case('m'):
-        player.use('pick')
+        player.pick.use()
       elif case('chop') or case('c'):
-        player.use('axe')
+        player.axe.use()
       elif case('fight') or case('f'):
-        player.use('sword')
+        player.sword.use()
       elif case('sell') or case('s'):
         player.sell(args[1].lower(), ''.join(args[2:]))
       elif case('buy'):
