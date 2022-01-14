@@ -1,4 +1,4 @@
-from switch import *
+from switch import switch, case
 # Chop Mats: (60s)
 # Oak: 10
 # Birch: 12
@@ -105,6 +105,7 @@ class Player:
     elif case('axe'):
       self.axe = tool
     self.money -= tool.cost
+    print('Bought',tool.name)
   def use(self, tool):
     switch(tool)
     if case('pick'):
@@ -134,7 +135,6 @@ class Player:
       self.lvl = 1
       self.lvlXp = 0
       self.lvlCost = 1
-
   class Constants:
     def __init__(self, master):
       self.oak = Item(master, 'Oak', 0, 3, 10, 'wood')
