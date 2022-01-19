@@ -1,0 +1,26 @@
+{
+  "name":"Revenant Falchion",
+  "stats": {
+    "damage":90,
+    "strength":50,
+    "crit_change":0,
+    "crit_damage":0,
+    "attack_speed":0,
+    "ability_damage":0,
+    "sea_creature_chance":0,
+    "health":0,
+    "defense":0,
+    "speed":0,
+    "intelligence":100,
+    "magic_find":0,
+    "true_defense":0,
+    "ferocity":0,
+    "mining_speed":0,
+    "mining_fortune":0,
+    "pristine":0,
+    "farming_fortune":0
+  },
+  "ability":{},
+  "rarity":"rare",
+  "description":"Deals +150% damage to Zombies."
+}
