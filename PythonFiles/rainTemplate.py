@@ -67,8 +67,10 @@ while running:
         umbrella.velocity += 2 #Decrease velocity by 2 to the left
       if event.key == pygame.K_RIGHT: #On right key release
         umbrella.velocity -= 2 #Decrease velocity by 2 to the right
-
-
+  
+  getHits = pygame.sprite.spritecollide(umbrella, raindrops, False) #gets an iterable of everything in the raindrops group thats colliding with the umbrella
+  for hit in getHits: #iterates through the collisions
+    hit.rect.y = 0 #brings all collided rain drops back to the top
   screen.fill([0,0,0]) #Fills the screen
   raindrops.draw(screen) #Adds all raindrops to screen
   screen.blit(umbrella.image, umbrella.rect.topleft) #Adds umbrella to screen

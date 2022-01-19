@@ -1,5 +1,6 @@
 # https://www.dndbeyond.com/characters/65548079
 # https://orkerhulen.dk/onewebmedia/DnD%205e%20Players%20Handbook%20%28BnW%20OCR%29.pdf
+# change adventurer from a class into separate classes per character class
 # -1 wisdom, +1 charisma
 class adventurer:
   def __init__(self, name, race, charClass, health, attack, atkRange, moves=[None, None, None], nickname=None):
