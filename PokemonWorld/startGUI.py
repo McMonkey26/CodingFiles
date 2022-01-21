@@ -1,5 +1,5 @@
 import os
-os.chdir('/Users/jpollack/Desktop/CodingFiles/PokemonWorld')
+os.chdir('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PokemonWorld')
 import tkinter as tk
 from PIL import ImageTk, Image
 def print(*args, **kwargs):

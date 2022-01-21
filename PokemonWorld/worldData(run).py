@@ -26,7 +26,7 @@ import startGUI as start
 import tkinter as tk
 from playerData import *
 from PIL import ImageTk, Image
-os.chdir('/Users/jpollack/Desktop/CodingFiles/PokemonWorld')
+os.chdir('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PokemonWorld')
 def print(*args, **kwargs):
   import os, inspect, builtins
   builtins.print('{:20}'.format(lineFile:=f'{os.path.basename(__file__)}:{inspect.currentframe().f_back.f_lineno}')+' '.join(list(map(lambda x:str(x).replace('\n', '\n{:20}'.format(lineFile)), args))))

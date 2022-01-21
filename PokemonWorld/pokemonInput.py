@@ -1,7 +1,7 @@
 import random, os
 from switch import switch, case
 import PySimpleGUI as sg
-os.chdir('/Users/jpollack/Desktop/CodingFiles/pokemonFiles')
+os.chdir('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PokemonWorld')
 def print(*args, **kwargs):
   import os, inspect, builtins
   builtins.print('{:20}'.format(lineFile:=f'{os.path.basename(__file__)}:{inspect.currentframe().f_back.f_lineno}')+' '.join(list(map(lambda x:str(x).replace('\n', '\n{:20}'.format(lineFile)), args))))
