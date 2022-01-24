@@ -158,9 +158,6 @@ for row in range(len(map)):
       testImage2 = testImage.resize((128, 160))
       test = ImageTk.PhotoImage(testImage2)
       trees.append(test)
-      map[row][tile+1] = ''
-      map[row+1][tile] = ''
-      map[row+1][tile+1] = ''
       can.create_image(tile*32-32, row*32-64, anchor='nw', image=trees[-1])
     elif case('g'):
       grass.append(ImageTk.PhotoImage(Image.open('./images/tall_grass.png').convert('RGBA')))
