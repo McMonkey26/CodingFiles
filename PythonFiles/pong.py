@@ -22,16 +22,12 @@ class Paddle(pygame.sprite.Sprite): #class to hold the paddles
     self.rect.topleft = (x, y) #moves the paddle to the inputted position
     self.player = player #adds a variable player to check controls
     self.velo = 0 #adds a variable for velocity
-  def update(self): #runs every frame
+  def update(self, upKey, downKey): #runs every frame
     key = pygame.key.get_pressed() #gets all buttons pressed
     # adds up/down controls \/\/\/
-    if key[pygame.K_UP] and self.player == 2:
+    if key[upKey]:
       self.velo = -2
-    elif key[pygame.K_DOWN] and self.player == 2:
-      self.velo = 2
-    elif key[pygame.K_w] and self.player == 1:
-      self.velo = -2
-    elif key[pygame.K_s] and self.player == 1:
+    elif key[downKey]:
       self.velo = 2
     else:
       self.velo = 0
@@ -122,7 +118,8 @@ while run:
   #shows player 2's score
   screen.blit(p2scoreSprite, (width-5-scoreFont.size(str(score[1]))[0], 10))
   #updates the paddles
-  players.update()
+  player1.update(pygame.K_w, pygame.K_s)
+  player2.update(pygame.K_UP, pygame.K_DOWN)
   #updates the ball(s)
   balls.update()
 
