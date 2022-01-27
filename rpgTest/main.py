@@ -1,58 +1,101 @@
-# https://www.dndbeyond.com/characters/65548079
-# https://orkerhulen.dk/onewebmedia/DnD%205e%20Players%20Handbook%20%28BnW%20OCR%29.pdf
-# change adventurer from a class into separate classes per character class
-# -1 wisdom, +1 charisma
-class adventurer:
-  def __init__(self, name, race, charClass, health, attack, atkRange, moves=[None, None, None], nickname=None):
-    self.name = name
-    self.nick = name if nickname == None else nickname
-    self.race = race
-    self.charClass = charClass
-    self.maxHp = health
-    self.hp = health
-    self.maxStm = 100
-    self.stm = 100
-    self.dmg = attack
-    self.range = atkRange
-    self.combat = False
-    for i in moves:
-      j = i
-      setattr(self, i.id, lambda:i.attack(self, j, 'target'))
-  def show(self):
-    print(self.name,'('+self.nick+')')
-    print(self.race+',',self.charClass)
-    print('HP:',self.hp,'/',self.maxHp)
-    print('Stamina:',self.stm,'/',self.maxStm)
-    print('Damage:',self.dmg)
-    print('Range:',self.range)
-  def attack(self, weapon, target):
-    print(self.nick,'used',weapon.name,'on',target.nick)
-    target.hp -= weapon.damage
-    self.stm -= weapon.stamina
-class weapon:
-  def __init__(self, id, name, type, damage, dType, stamina):
-    self.id = id
-    self.name = name
-    self.type = type
-    self.damage = damage
-    self.type = dType
-    self.stamina = stamina
-elvenBlade = weapon('elvenBlade', 'Elven Blade', 'sword', 20, 'Normal', 10)
-elvenBow = weapon('elvenBow', 'Elven Bow', 'bow', 10, 'Projectile', 20)
-thievesKnife = weapon('thievesKnife', 'Thieve\'s Knive', 'dagger', 5, 'Normal', 3)
-print('hrm')
-julian = adventurer('Hawk Feather', 'Tabaxi', 'Rogue', 81, 6, 10, [elvenBlade, elvenBow, thievesKnife], 'Hawk')
-exAdvent = adventurer('Aragorn', 'Wood Elf', 'Druid', 94, 3, 30, [elvenBlade, elvenBow, thievesKnife])
-print('-')
-julian.show()
-print('-')
-exAdvent.show()
-print('-')
-julian.attack(elvenBow, exAdvent)
-world = [[' ']*8]*8
-print('-')
-julian.show()
-print('-')
-exAdvent.show()
-print('-')
-print('test')
+import players, pygame
+
+tileSize = 16
+pygame.init()
+
+screen = pygame.display.set_mode((tileSize*15, tileSize*7))
+screen.fill((255, 255, 255))
+
+#| # -> wall
+#| C -> coin chest
+#| c -> key chest
+#| D -> unlocked door
+#| k -> key door
+world = [
+  '###############',
+  '#  CC  ## c   #',
+  '#      ####   #',
+  '##     ####   #',
+  '       ####    ',
+  '       ####    ',
+  '#####  ########'
+]
+class Wall(pygame.sprite.Sprite):
+  def __init__(self, x, y):
+    super().__init__()
+    self.image = pygame.Surface((tileSize, tileSize))
+    self.image.fill((69, 44, 14))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+class CoinChest(pygame.sprite.Sprite):
+  def __init__(self, x, y):
+    super().__init__()
+    self.image = pygame.Surface((tileSize, tileSize))
+    self.image.fill((125, 62, 31))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+    self.coins = 3
+  def open(self, player):
+    player.coins += self.coins
+    self.image.fill((202, 245, 29))
+class KeyChest(pygame.sprite.Sprite):
+  def __init__(self, x, y, id):
+    super().__init__()
+    self.image = pygame.Surface((tileSize, tileSize))
+    self.image.fill((130, 92, 42))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+    self.keyId = id
+  def open(self, player):
+    player.keys.append(self.keyId)
+    self.image.fill((51, 34, 12))
+class Slime(pygame.sprite.Sprite):
+  def __init__(self, x, y, size):
+    super().__init__()
+    self.image = pygame.Surface((tileSize*size, tileSize*size))
+    self.image.fill((90, 186, 20))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+    self.alive = True
+  def die(self):
+    self.image.fill((66, 42, 5))
+    self.alive = False
+all_sprites = pygame.sprite.Group()
+walls = pygame.sprite.Group()
+chests = pygame.sprite.Group()
+enemies = pygame.sprite.Group()
+for line in range(len(world)):
+  for tile in range(len(world[line])):
+    if world[line][tile] == '#':
+      tempVariable = Wall(tile, line)
+      walls.add(tempVariable)
+    elif world[line][tile] == 'C':
+      tempVariable = CoinChest(tile, line)
+      chests.add(tempVariable)
+    elif world[line][tile] == 'c':
+      tempVariable = KeyChest(tile, line, 'testingtesting123')
+      chests.add(tempVariable)
+    elif world[line][tile] == 'S':
+      tempVariable = Slime(tile, line, 2)
+      enemies.add(tempVariable)
+    elif world[line][tile] == 's':
+      tempVariable = Slime(tile, line, 1)
+      enemies.add(tempVariable)
+    else:
+      continue
+    all_sprites.add(tempVariable)
+
+def gameLoop():
+  screen.fill((255, 255, 255))
+  all_sprites.draw(screen)
+  players.julian.frame(screen)
+  pygame.display.flip()
+
+running = True
+while running:
+  for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+      running = False
+      break
+    players.julian.ability(event)
+  gameLoop()
