@@ -105,12 +105,7 @@ pygame.display.flip()
 #control variable for main loop
 run = True
 
-#main loop
-while run:
-  #allows you to press the x in the top corner of pygame window and close it
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      run = False
+def gameScreen():
   #clears the screen
   screen.fill((0, 0, 0))
   #shows player 1's score
@@ -122,6 +117,40 @@ while run:
   player2.update(pygame.K_UP, pygame.K_DOWN)
   #updates the ball(s)
   balls.update()
-
+def winScreen(player):
+  global score, p1scoreSprite, p2scoreSprite
+  screen.fill((0,0,0)) #clears the screen
+  winFont = pygame.font.SysFont('arial', 40) #creates a font for the win text
+  winText = f'Player {player} Wins!' #text to show the player
+  winSprite = winFont.render(winText, 1, (255, 255, 255)) #makes a sprite to display
+  subFont = pygame.font.SysFont('arial', 20) #creates a font for the sub text
+  subText = 'Nice Job!' #text to show the player
+  subSprite = subFont.render(subText, 1, (255, 255, 255)) #makes a sprite to display
+  run = True #win loop variable
+  while run: #win loop
+    for event in pygame.event.get(): #gets all events
+      if event.type == pygame.QUIT: #lets the player press the x button to quit the game
+        run = False
+        pygame.quit()
+      if event.type == pygame.KEYDOWN: #lets the player press space to restart the game
+        if event.key == pygame.K_SPACE:
+          score = [0, 0] #resets the score
+          p1scoreSprite = scoreFont.render(str(score[0]), 1, (255, 255, 255)) #updates player 1 score sprite
+          p2scoreSprite = scoreFont.render(str(score[1]), 1, (255, 255, 255)) #updates player 2 score sprite
+          run = False #quits the loop
+    screen.blit(winSprite, ((width-winFont.size(winText)[0])/2, 270)) #adds the win text to the screen
+    screen.blit(subSprite, ((width-subFont.size(subText)[0])/2, 320)) #adds the sub text to the screen
+    pygame.display.flip() #updates the screen
+#main loop
+while run:
+  #allows you to press the x in the top corner of pygame window and close it
+  for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+      run = False
+  gameScreen() #runs when the game is running
+  if score[0] >= 5: # \/ \/ \/
+    winScreen(1) # runs when someone wins
+  elif score[1] >= 5:
+    winScreen(2) # /\ /\ /\
   #updates the screen for the user with anything that happened in the evnets
   pygame.display.flip()
