@@ -2,7 +2,7 @@ import json, os
 os.chdir('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/cspFiles/bigDataProject')
 
 data = []
-with open('gen8ou-1825-nmod.txt') as file:
+with open('gen8ou-0-nmod.txt') as file:
   for line in file:
     data.append(line.rstrip('\n'))
 data = data[5:705]

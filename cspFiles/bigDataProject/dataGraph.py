@@ -9,7 +9,7 @@ screen.fill((255, 255, 255))
 class Bar(pygame.sprite.Sprite):
   def __init__(self, pokemon):
     super().__init__()
-    self.image = pygame.Surface((5, pokemon.usPerc))
+    self.image = pygame.Surface((5, pokemon.usPerc*15))
     self.image.fill((0, 150, 255) if pokemon.rank % 2 == 0 else (0, 180, 240))
     self.rect = self.image.get_rect()
     self.rect.bottomleft = ((pokemon.rank-1)*5, 500)
