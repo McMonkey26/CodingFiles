@@ -20,6 +20,102 @@ world = [
   '       ####    ',
   '#####  ########'
 ]
+world00 = [
+  '###############',
+  '###############',
+  '####   ########',
+  '####   ########',
+  '####           ',
+  '####           ',
+  '###############'
+]
+world10 = [
+  '###############',
+  '#  CC  ## c   #',
+  '#      ####   #',
+  '##     ####   #',
+  '   S   ####    ',
+  '       ####    ',
+  '#####  ########'
+]
+world20 = [
+  '###############',
+  '###############',
+  '#####   #######',
+  '####    #######',
+  '       ########',
+  '      #########',
+  '###############'
+]
+world01 = [
+  '###############',
+  '###############',
+  '###############',
+  '###############',
+  '###############',
+  '###############',
+  '###############'
+]
+world11 = [
+  '#####  ########',
+  '#####  ########',
+  '#####    ######',
+  '#####    ######',
+  '###############',
+  '###############',
+  '###############'
+]
+world21 = [
+  '###############',
+  '###############',
+  '###############',
+  '###############',
+  '###############',
+  '###############',
+  '###############'
+]
+worldMaps = [
+  [world00, world10, world20],
+  [world01, world11, world21]
+]
+spriteMaps = [
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
+]
+wallMaps = [
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
+]
+chestMaps = [
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
+]
+enemyMaps = [
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
+]
+for x in range(len(worldMaps)):
+  for y in range(len(worldMaps[x])):
+    for line in range(len(worldMaps[x][y])):
+      for tile in range(len(worldMaps[x][y][line])):
+        if worldMaps[x][y][line][tile] == '#':
+          tempVariable = Wall(tile, line)
+          wallMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == 'C':
+          tempVariable = CoinChest(tile, line)
+          chestMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == 'c':
+          tempVariable = KeyChest(tile, line, 'testingtesting123')
+          chestMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == 'S':
+          tempVariable = Slime(tile, line, 2)
+          enemyMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == 's':
+          tempVariable = Slime(tile, line, 1)
+          enemyMaps[x][y].add(tempVariable)
+        else:
+          continue
+        spriteMaps[x][y].add(tempVariable)
 class Wall(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
