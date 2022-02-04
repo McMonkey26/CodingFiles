@@ -1,0 +1,134 @@
+{
+  "Name": "Landorus-Therian",
+  "Weight": {
+    "Raw count": "625380",
+    "Avg. weight": "1.0",
+    "Viability Ceiling": "94"
+  },
+  "Abilities": {
+    "Intimidate": "100.000%"
+  },
+  "Items": {
+    "Leftovers": "60.244%",
+    "Choice Scarf": "11.720%",
+    "Rocky Helmet ": "8.286%",
+    "Focus Sash ": "3.441%",
+    "Choice Band ": "3.169%",
+    "Life Orb ": "2.867%",
+    "Soft Sand ": "2.612%",
+    "Heavy-Duty Boots ": "2.522%",
+    "Assault Vest ": "1.370%",
+    "Other ": "3.771%"
+  },
+  "Spreads": {
+    "Jolly:0/252/0/0/4/252": "20.552%",
+    "Impish:252/0/164/0/0/92": "11.041%",
+    "Jolly:0/252/4/0/0/252": "",
+    "Careful:252/0/4/0/252/0": "",
+    "Careful:248/0/8/0/252/0": "",
+    "Jolly:4/252/0/0/0/252": "",
+    "Other": "52.009%"
+  },
+  "Moves": {
+    "Earthquake": "96.591%",
+    "U-turn": "77.982%",
+    "Stealth Rock": "55.273%",
+    "Knock Off": "37.502%",
+    "Toxic": "34.929%",
+    "Defog": "29.252%",
+    "Stone Edge": "20.167%",
+    "Swords Dance": "10.905%",
+    "Explosion ": "7.228%",
+    "Smack Down ": "4.957%",
+    "Substitute ": "3.700%",
+    "Rock Slide ": "3.566%",
+    "Other": "17.947%"
+  },
+  "Teammates": {
+    "Dragapult": "27.236%",
+    "Ferrothorn": "23.233%",
+    "Heatran": "22.882%",
+    "Toxapex": "15.899%",
+    "Kartana": "15.022%",
+    "Weavile": "14.932%",
+    "Tapu Lele": "14.683%",
+    "Tapu Fini": "14.599%",
+    "Urshifu-Rapid-Strike": "14.121%",
+    "Corviknight": "12.239%",
+    "Melmetal": "11.858%"
+  },
+  "Checks and Counters": {
+    "Cloyster": [
+      "89.416",
+      "(91.04\u00b10.41)",
+      "42.4% KOed",
+      "48.7% switched out"
+    ],
+    "Hawlucha": [
+      "83.644",
+      "(84.95\u00b10.33)",
+      "30.0% KOed",
+      "54.9% switched out"
+    ],
+    "Weavile": [
+      "83.634",
+      "(84.52\u00b10.22)",
+      "28.5% KOed",
+      "56.1% switched out"
+    ],
+    "Inteleon": [
+      "83.397",
+      "(86.93\u00b10.88)",
+      "29.9% KOed",
+      "57.0% switched out"
+    ],
+    "Kyurem": [
+      "83.230",
+      "(84.64\u00b10.35)",
+      "29.9% KOed",
+      "54.8% switched out"
+    ],
+    "Eiscue": [
+      "82.832",
+      "(88.97\u00b11.53)",
+      "36.2% KOed",
+      "52.8% switched out"
+    ],
+    "Mamoswine": [
+      "82.714",
+      "(84.28\u00b10.39)",
+      "29.1% KOed",
+      "55.1% switched out"
+    ],
+    "Avalugg": [
+      "81.712",
+      "(85.98\u00b11.07)",
+      "16.6% KOed",
+      "69.4% switched out"
+    ],
+    "Gyarados": [
+      "80.317",
+      "(82.40\u00b10.52)",
+      "24.5% KOed",
+      "57.9% switched out"
+    ],
+    "Cramorant": [
+      "78.568",
+      "(87.44\u00b12.22)",
+      "23.8% KOed",
+      "63.7% switched out"
+    ],
+    "Skarmory": [
+      "78.557",
+      "(80.21\u00b10.41)",
+      "5.2% KOed",
+      "75.1% switched out"
+    ],
+    "Buzzwole": [
+      "78.553",
+      "(79.78\u00b10.31)",
+      "25.0% KOed",
+      "54.8% switched out"
+    ]
+  }
+}
