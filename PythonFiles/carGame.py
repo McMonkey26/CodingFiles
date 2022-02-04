@@ -1,5 +1,5 @@
 #gets the pygame library
-import pygame
+import pygame, random
 
 #initializes the program
 pygame.init()
@@ -27,7 +27,14 @@ background.add(Road(0))
 background.add(Road(600))
 background.add(Road(1200))
 background.add(Road(1800))
-
+class Zombie(pygame.sprite.Sprite):
+  def __init__(self, x, y):
+    super().__init__()
+    self.image = pygame.Surface((50, 90))
+    self.image.fill((255, 0, 0))
+    self.rect = self.image.get_rect()
+    self.rect.center = (x, y)
+zombies = pygame.sprite.Group()
 class Car(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
@@ -68,6 +75,7 @@ class Car(pygame.sprite.Sprite):
       self.rect.bottom = height
       self.velo[1] = 0
 carSprite = Car(300, 600)
+pygame.time.set_timer(pygame.USEREVENT, 2000)
 
 run = True
 #main loop
@@ -76,10 +84,13 @@ while run:
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       run = False
+    if event.type == pygame.USEREVENT:
+      zombies.add(Zombie(random.randint(0, width), random.randint(0, height)))
   #updates the screen for the user with anything that happened in the evnets
   screen.fill((0, 0, 0))
   carSprite.update()
   background.update()
   background.draw(screen)
+  zombies.draw(screen)
   screen.blit(carSprite.image, carSprite.rect.topleft)
   pygame.display.flip()
