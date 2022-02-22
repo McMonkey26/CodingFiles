@@ -1,0 +1,295 @@
+Enchanted Prismarine Shard.png 1x Titanium Drill DR-X655
+Enchanted Prismarine Shard.png 1x Titanium Drill DR-X555 
+Enchanted Prismarine Shard.png 1x Titanium Drill DR-X455 
+Enchanted Prismarine Shard.png 1x Titanium Drill DR-X355
+Drill Engine.png 1x Drill Engine
+Enchanted Iron Block.png 1x Enchanted Iron Block
+Enchanted Iron.png 160x Enchanted Iron
+Iron Ingot.png 25,600x Iron Ingot
+Enchanted Redstone Block.png 3x Enchanted Redstone Block
+Enchanted Redstone.png 480x Enchanted Redstone
+Redstone.png 76,800x Redstone
+Golden Plate.png 1x Golden Plate
+Enchanted Gold Block.png 2x Enchanted Gold Block
+Enchanted Gold.png 320x Enchanted Gold
+Gold Ingot.png 51,200x Gold Ingot
+Glacite Jewel.png 5x Glacite Jewel
+Enchanted Diamond.png 1x Refined Diamond
+Enchanted Diamond Block.png 2x Enchanted Diamond Block
+Enchanted Diamond.png 320x Enchanted Diamond
+Diamond.png 51,200x Diamond
+Treasurite.png 10x Treasurite
+Enchanted Diamond.png 1x Refined Diamond
+Enchanted Diamond Block.png 2x Enchanted Diamond Block
+Enchanted Diamond.png 320x Enchanted Diamond
+Diamond.png 51,200x Diamond
+Fuel Tank.png 1x Fuel Tank
+Enchanted Block of Coal.png 2x Enchanted Block of Coal
+Enchanted Coal.png 320x Enchanted Coal
+Coal.png 51,200x Coal
+Golden Plate.png 6x Golden Plate
+Enchanted Gold Block.png 12x Enchanted Gold Block
+Enchanted Gold.png 1,920x Enchanted Gold
+Gold Ingot.png 307,200x Gold Ingot
+Glacite Jewel.png 30x Glacite Jewel
+Enchanted Diamond.png 6x Refined Diamond
+Enchanted Diamond Block.png 12x Enchanted Diamond Block
+Enchanted Diamond.png 1,920x Enchanted Diamond
+Diamond.png 307,200x Diamond
+Refined Titanium.png 10x Refined Titanium
+Enchanted Titanium.png 160x Enchanted Titanium
+Titanium.png 25,600x Titanium
+Refined Mithril.png 10x Refined Mithril
+Enchanted Prismarine Crystals.png 1,600x Enchanted Mithril
+Prismarine Crystals.png 256,000x Mithril
+Enchanted Diamond.png 10x Refined Diamond
+Enchanted Diamond Block.png 20x Enchanted Diamond Block
+Enchanted Diamond.png 3,200x Enchanted Diamond
+Diamond.png 512,000x Diamond
+Refined Titanium.png 16x Refined Titanium
+Enchanted Titanium.png 256x Enchanted Titanium
+Titanium.png 40,960x Titanium
+Mithril Plate.png 6x Mithril Plate
+Refined Mithril.png 30x Refined Mithril
+Enchanted Prismarine Crystals.png 4,800x Enchanted Mithril
+Prismarine Crystals.png 768,000x Mithril
+Golden Plate.png 6x Golden Plate
+Enchanted Gold Block.png 12x Enchanted Gold Block
+Enchanted Gold.png 1,920x Enchanted Gold
+Gold Ingot.png 307,200x Gold Ingot
+Glacite Jewel.png 30x Glacite Jewel
+Enchanted Diamond.png 6x Refined Diamond
+Enchanted Diamond Block.png 12x Enchanted Diamond Block
+Enchanted Diamond.png 1,920x Enchanted Diamond
+Diamond.png 307,200x Diamond
+Enchanted Iron Block.png 6x Enchanted Iron Block
+Enchanted Iron.png 960x Enchanted Iron
+Iron Ingot.png 153,600x Iron Ingot
+Refined Titanium.png 6x Refined Titanium
+Enchanted Titanium.png 96x Enchanted Titanium
+Titanium.png 15,360x Titanium
+Enchanted Diamond.png 20x Refined Diamond
+Enchanted Diamond Block.png 40x Enchanted Diamond Block
+Enchanted Diamond.png 6,400x Enchanted Diamond
+Diamond.png 1,024,000x Diamond
+Refined Titanium.png 32x Refined Titanium
+Enchanted Titanium.png 512x Enchanted Titanium
+Titanium.png 81,920x Titanium
+Enchanted Iron Block.png 2x Enchanted Iron Block
+Enchanted Iron.png 320x Enchanted Iron
+Iron Ingot.png 51,200x Iron Ingot
+Mithril Plate.png 15x Mithril Plate
+Refined Mithril.png 75x Refined Mithril
+Enchanted Prismarine Crystals.png 12,000x Enchanted Mithril
+Prismarine Crystals.png 1,920,000x Mithril
+Golden Plate.png 15x Golden Plate
+Enchanted Gold Block.png 30x Enchanted Gold Block
+Enchanted Gold.png 4,800x Enchanted Gold
+Gold Ingot.png 768,000x Gold Ingot
+Glacite Jewel.png 75x Glacite Jewel
+Enchanted Diamond.png 15x Refined Diamond
+Enchanted Diamond Block.png 30x Enchanted Diamond Block
+Enchanted Diamond.png 4,800x Enchanted Diamond
+Diamond.png 768,000x Diamond
+Enchanted Iron Block.png 15x Enchanted Iron Block
+Enchanted Iron.png 2,400x Enchanted Iron
+Iron Ingot.png 384,000x Iron Ingot
+Refined Titanium.png 15x Refined Titanium
+Enchanted Titanium.png 240x Enchanted Titanium
+Titanium.png 38,400x Titanium
+Plasma.png 20x Plasma
+Corleonite.png 30x Corleonite
+Flawless Ruby Gemstone.png 1x Flawless Ruby Gemstone
+Fine Ruby Gemstone.png 80x Fine Ruby Gemstone
+Flawed Ruby Gemstone.png 6,400x Flawed Ruby Gemstone
+Rough Ruby Gemstone.png 512,000x Rough Ruby Gemstone
+Enchanted Diamond.png 5x Refined Diamond
+Enchanted Diamond Block.png 10x Enchanted Diamond Block
+Enchanted Diamond.png 1,600x Enchanted Diamond
+Diamond.png 256,000x Diamond
+Gemstone Mixture.png 16x Gemstone Mixture
+Fine Jade Gemstone.png 64x Fine Jade Gemstone
+Flawed Jade Gemstone.png 5,120x Flawed Jade Gemstone
+Rough Jade Gemstone.png 409,600x Rough Jade Gemstone
+Fine Amber Gemstone.png 64x Fine Amber Gemstone
+Flawed Amber Gemstone.png 5,120x Flawed Amber Gemstone
+Rough Amber Gemstone.png 409,600x Rough Amber Gemstone
+Fine Amethyst Gemstone.png 64x Fine Amethyst Gemstone
+Flawed Amethyst Gemstone.png 5,120x Flawed Amethyst Gemstone
+Rough Amethyst Gemstone.png 409,600x Rough Amethyst Gemstone
+Fine Sapphire Gemstone.png 64x Fine Sapphire Gemstone
+Flawed Sapphire Gemstone.png 5,120x Flawed Sapphire Gemstone
+Rough Sapphire Gemstone.png 409,600x Rough Sapphire Gemstone
+Sludge Juice.png 5,120x Sludge Juice
+Refined Titanium.png 12x Refined Titanium
+Enchanted Titanium.png 192x Enchanted Titanium
+Titanium.png 30,720x Titanium
+Mithril Plate.png 5x Mithril Plate
+Refined Mithril.png 25x Refined Mithril
+Enchanted Prismarine Crystals.png 4,000x Enchanted Mithril
+Prismarine Crystals.png 640,000x Mithril
+Golden Plate.png 5x Golden Plate
+Enchanted Gold Block.png 10x Enchanted Gold Block
+Enchanted Gold.png 1,600x Enchanted Gold
+Gold Ingot.png 256,000x Gold Ingot
+Glacite Jewel.png 25x Glacite Jewel
+Enchanted Diamond.png 5x Refined Diamond
+Enchanted Diamond Block.png 10x Enchanted Diamond Block
+Enchanted Diamond.png 1,600x Enchanted Diamond
+Diamond.png 256,000x Diamond
+Enchanted Iron Block.png 5x Enchanted Iron Block
+Enchanted Iron.png 800x Enchanted Iron
+Iron Ingot.png 128,000x Iron Ingot
+Refined Titanium.png 5x Refined Titanium
+Enchanted Titanium.png 80x Enchanted Titanium
+Titanium.png 12,800x Titanium
+Amber-polished Drill Engine.png 1x Amber-polished Drill Engine
+Ruby-polished Drill Engine.png 1x Ruby-polished Drill Engine
+Mithril-Plated Drill Engine.png 1x Mithril-Plated Drill Engine
+Drill Engine.png 2x Drill Engine
+Enchanted Iron Block.png 2x Enchanted Iron Block
+Enchanted Iron.png 320x Enchanted Iron
+Iron Ingot.png 51,200x Iron Ingot
+Enchanted Redstone Block.png 6x Enchanted Redstone Block
+Enchanted Redstone.png 960x Enchanted Redstone
+Redstone.png 153,600x Redstone
+Golden Plate.png 2x Golden Plate
+Enchanted Gold Block.png 4x Enchanted Gold Block
+Enchanted Gold.png 640x Enchanted Gold
+Gold Ingot.png 102,400x Gold Ingot
+Glacite Jewel.png 10x Glacite Jewel
+Enchanted Diamond.png 2x Refined Diamond
+Enchanted Diamond Block.png 4x Enchanted Diamond Block
+Enchanted Diamond.png 640x Enchanted Diamond
+Diamond.png 102,400x Diamond
+Treasurite.png 20x Treasurite
+Enchanted Diamond.png 2x Refined Diamond
+Enchanted Diamond Block.png 4x Enchanted Diamond Block
+Enchanted Diamond.png 640x Enchanted Diamond
+Diamond.png 102,400x Diamond
+Mithril Plate.png 3x Mithril Plate
+Refined Mithril.png 15x Refined Mithril
+Enchanted Prismarine Crystals.png 2,400x Enchanted Mithril
+Prismarine Crystals.png 384,000x Mithril
+Golden Plate.png 3x Golden Plate
+Enchanted Gold Block.png 6x Enchanted Gold Block
+Enchanted Gold.png 960x Enchanted Gold
+Gold Ingot.png 153,600x Gold Ingot
+Glacite Jewel.png 15x Glacite Jewel
+Enchanted Diamond.png 3x Refined Diamond
+Enchanted Diamond Block.png 6x Enchanted Diamond Block
+Enchanted Diamond.png 960x Enchanted Diamond
+Diamond.png 153,600x Diamond
+Enchanted Iron Block.png 3x Enchanted Iron Block
+Enchanted Iron.png 480x Enchanted Iron
+Iron Ingot.png 76,800x Iron Ingot
+Refined Titanium.png 3x Refined Titanium
+Enchanted Titanium.png 48x Enchanted Titanium
+Titanium.png 7,680x Titanium
+Superlite Motor.png 10x Superlite Motor
+Fine Ruby Gemstone.png 10x Fine Ruby Gemstone
+Flawed Ruby Gemstone.png 800x Flawed Ruby Gemstone
+Rough Ruby Gemstone.png 64,000x Rough Ruby Gemstone
+Sapphire-polished Drill Engine.png 1x Sapphire-polished Drill Engine
+Titanium-Plated Drill Engine.png 1x Titanium-Plated Drill Engine
+Drill Engine.png 10x Drill Engine
+Enchanted Iron Block.png 10x Enchanted Iron Block
+Enchanted Iron.png 1,600x Enchanted Iron
+Iron Ingot.png 256,000x Iron Ingot
+Enchanted Redstone Block.png 30x Enchanted Redstone Block
+Enchanted Redstone.png 4,800x Enchanted Redstone
+Redstone.png 768,000x Redstone
+Golden Plate.png 10x Golden Plate
+Enchanted Gold Block.png 20x Enchanted Gold Block
+Enchanted Gold.png 3,200x Enchanted Gold
+Gold Ingot.png 512,000x Gold Ingot
+Glacite Jewel.png 50x Glacite Jewel
+Enchanted Diamond.png 10x Refined Diamond
+Enchanted Diamond Block.png 20x Enchanted Diamond Block
+Enchanted Diamond.png 3,200x Enchanted Diamond
+Diamond.png 512,000x Diamond
+Treasurite.png 100x Treasurite
+Enchanted Diamond.png 10x Refined Diamond
+Enchanted Diamond Block.png 20x Enchanted Diamond Block
+Enchanted Diamond.png 3,200x Enchanted Diamond
+Diamond.png 512,000x Diamond
+Plasma.png 5x Plasma
+Mithril Plate.png 4x Mithril Plate
+Refined Mithril.png 20x Refined Mithril
+Enchanted Prismarine Crystals.png 3,200x Enchanted Mithril
+Prismarine Crystals.png 512,000x Mithril
+Golden Plate.png 4x Golden Plate
+Enchanted Gold Block.png 8x Enchanted Gold Block
+Enchanted Gold.png 1,280x Enchanted Gold
+Gold Ingot.png 204,800x Gold Ingot
+Glacite Jewel.png 20x Glacite Jewel
+Enchanted Diamond.png 4x Refined Diamond
+Enchanted Diamond Block.png 8x Enchanted Diamond Block
+Enchanted Diamond.png 1,280x Enchanted Diamond
+Diamond.png 204,800x Diamond
+Enchanted Iron Block.png 4x Enchanted Iron Block
+Enchanted Iron.png 640x Enchanted Iron
+Iron Ingot.png 102,400x Iron Ingot
+Refined Titanium.png 4x Refined Titanium
+Enchanted Titanium.png 64x Enchanted Titanium
+Titanium.png 10,240x Titanium
+Refined Titanium.png 5x Refined Titanium
+Enchanted Titanium.png 80x Enchanted Titanium
+Titanium.png 12,800x Titanium
+Electron Transmitter.png 25x Electron Transmitter
+FTX 3070.png 25x FTX 3070
+Fine Sapphire Gemstone.png 20x Fine Sapphire Gemstone
+Flawed Sapphire Gemstone.png 1,600x Flawed Sapphire Gemstone
+Rough Sapphire Gemstone.png 128,000x Rough Sapphire Gemstone
+Flawless Amber Gemstone.png 1x Flawless Amber Gemstone
+Fine Amber Gemstone.png 80x Fine Amber Gemstone
+Flawed Amber Gemstone.png 6,400x Flawed Amber Gemstone
+Rough Amber Gemstone.png 512,000x Rough Amber Gemstone
+Robotron Reflector.png 50x Robotron Reflector
+Perfectly-Cut Fuel Tank.png 1x Perfectly-Cut Fuel Tank
+Gemstone Fuel Tank.png 1x Gemstone Fuel Tank
+Titanium-Infused Fuel Tank.png 1x Titanium-Infused Fuel Tank
+Refined Titanium.png 10x Refined Titanium
+Enchanted Titanium.png 160x Enchanted Titanium
+Titanium.png 25,600x Titanium
+Enchanted Diamond.png 10x Refined Diamond
+Enchanted Diamond Block.png 20x Enchanted Diamond Block
+Enchanted Diamond.png 3,200x Enchanted Diamond
+Diamond.png 512,000x Diamond
+Refined Mithril.png 10x Refined Mithril
+Enchanted Prismarine Crystals.png 1,600x Enchanted Mithril
+Prismarine Crystals.png 256,000x Mithril
+Fuel Tank.png 10x Fuel Tank
+Enchanted Block of Coal.png 20x Enchanted Block of Coal
+Enchanted Coal.png 3,200x Enchanted Coal
+Coal.png 512,000x Coal
+Control Switch.png 30x Control Switch
+Gemstone Mixture.png 10x Gemstone Mixture
+Fine Jade Gemstone.png 40x Fine Jade Gemstone
+Flawed Jade Gemstone.png 3,200x Flawed Jade Gemstone
+Rough Jade Gemstone.png 256,000x Rough Jade Gemstone
+Fine Amber Gemstone.png 40x Fine Amber Gemstone
+Flawed Amber Gemstone.png 3,200x Flawed Amber Gemstone
+Rough Amber Gemstone.png 256,000x Rough Amber Gemstone
+Fine Amethyst Gemstone.png 40x Fine Amethyst Gemstone
+Flawed Amethyst Gemstone.png 3,200x Flawed Amethyst Gemstone
+Rough Amethyst Gemstone.png 256,000x Rough Amethyst Gemstone
+Fine Sapphire Gemstone.png 40x Fine Sapphire Gemstone
+Flawed Sapphire Gemstone.png 3,200x Flawed Sapphire Gemstone
+Rough Sapphire Gemstone.png 256,000x Rough Sapphire Gemstone
+Sludge Juice.png 3,200x Sludge Juice
+Gemstone Mixture.png 25x Gemstone Mixture
+Fine Jade Gemstone.png 100x Fine Jade Gemstone
+Flawed Jade Gemstone.png 8,000x Flawed Jade Gemstone
+Rough Jade Gemstone.png 640,000x Rough Jade Gemstone
+Fine Amber Gemstone.png 100x Fine Amber Gemstone
+Flawed Amber Gemstone.png 8,000x Flawed Amber Gemstone
+Rough Amber Gemstone.png 640,000x Rough Amber Gemstone
+Fine Amethyst Gemstone.png 100x Fine Amethyst Gemstone
+Flawed Amethyst Gemstone.png 8,000x Flawed Amethyst Gemstone
+Rough Amethyst Gemstone.png 640,000x Rough Amethyst Gemstone
+Fine Sapphire Gemstone.png 100x Fine Sapphire Gemstone
+Flawed Sapphire Gemstone.png 8,000x Flawed Sapphire Gemstone
+Rough Sapphire Gemstone.png 640,000x Rough Sapphire Gemstone
+Sludge Juice.png 8,000x Sludge Juice
+Synthetic Heart.png 70x Synthetic Heart
