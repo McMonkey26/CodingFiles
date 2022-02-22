@@ -1,134 +1,180 @@
 {
-  "Name": "Landorus-Therian",
+  "Name": "Sceptile",
   "Weight": {
-    "Raw count": "625380",
+    "Raw count": "12633",
     "Avg. weight": "1.0",
-    "Viability Ceiling": "94"
+    "Viability Ceiling": "78"
   },
   "Abilities": {
-    "Intimidate": "100.000%"
+    "Unburden": "59.764%",
+    "Overgrow": "40.236%"
   },
   "Items": {
-    "Leftovers": "60.244%",
-    "Choice Scarf": "11.720%",
-    "Rocky Helmet ": "8.286%",
-    "Focus Sash ": "3.441%",
-    "Choice Band ": "3.169%",
-    "Life Orb ": "2.867%",
-    "Soft Sand ": "2.612%",
-    "Heavy-Duty Boots ": "2.522%",
-    "Assault Vest ": "1.370%",
-    "Other ": "3.771%"
+    "Leftovers": "13.766%",
+    "Focus Sash": "10.631%",
+    "Weakness Policy ": "9.301%",
+    "Electric Seed ": "7.781%",
+    "Life Orb ": "7.156%",
+    "Aguav Berry ": "5.470%",
+    "Sitrus Berry ": "5.034%",
+    "Grassy Seed ": "4.979%",
+    "Choice Specs ": "3.578%",
+    "Nothing ": "3.000%",
+    "White Herb ": "2.968%",
+    "Miracle Seed ": "1.876%",
+    "Throat Spray ": "1.876%",
+    "Expert Belt ": "1.694%",
+    "Quick Claw ": "1.591%",
+    "Power Herb ": "1.583%",
+    "Choice Scarf ": "1.369%",
+    "Psychic Seed ": "1.322%",
+    "Red Card ": "1.195%",
+    "Big Root ": "1.124%",
+    "Petaya Berry ": "1.108%",
+    "Salac Berry ": "1.029%",
+    "Misty Seed ": "0.974%",
+    "Heavy-Duty Boots ": "0.728%",
+    "Choice Band ": "0.720%",
+    "Liechi Berry ": "0.697%",
+    "Lansat Berry ": "0.657%",
+    "Assault Vest ": "0.641%",
+    "Figy Berry ": "0.451%",
+    "Wise Glasses ": "0.420%",
+    "Rocky Helmet ": "0.404%",
+    "Other ": "4.876%"
   },
   "Spreads": {
-    "Jolly:0/252/0/0/4/252": "20.552%",
-    "Impish:252/0/164/0/0/92": "11.041%",
-    "Jolly:0/252/4/0/0/252": "",
-    "Careful:252/0/4/0/252/0": "",
-    "Careful:248/0/8/0/252/0": "",
-    "Jolly:4/252/0/0/0/252": "",
-    "Other": "52.009%"
+    "Adamant:0/252/0/0/4/252": "14.027%",
+    "Modest:0/0/0/252/4/252": "",
+    "Adamant:4/252/0/0/0/252": "",
+    "Timid:0/0/0/252/4/252": "",
+    "Jolly:0/252/0/0/4/252": "",
+    "Adamant:252/252/0/0/0/0": "",
+    "Other": "63.880%"
   },
   "Moves": {
-    "Earthquake": "96.591%",
-    "U-turn": "77.982%",
-    "Stealth Rock": "55.273%",
-    "Knock Off": "37.502%",
-    "Toxic": "34.929%",
-    "Defog": "29.252%",
-    "Stone Edge": "20.167%",
-    "Swords Dance": "10.905%",
-    "Explosion ": "7.228%",
-    "Smack Down ": "4.957%",
-    "Substitute ": "3.700%",
-    "Rock Slide ": "3.566%",
-    "Other": "17.947%"
+    "Leaf Blade": "52.054%",
+    "Swords Dance": "34.093%",
+    "Giga Drain": "28.837%",
+    "Acrobatics": "27.887%",
+    "Earthquake": "26.716%",
+    "Dragon Pulse": "25.465%",
+    "Drain Punch": "20.842%",
+    "Leech Seed": "19.362%",
+    "Focus Blast": "18.618%",
+    "Leaf Storm": "17.027%",
+    "Energy Ball": "15.610%",
+    "Substitute": "12.301%",
+    "Dragon Claw ": "9.467%",
+    "Thunder Punch ": "9.246%",
+    "Dragon Dance ": "8.597%",
+    "Protect ": "7.520%",
+    "Toxic ": "5.834%",
+    "Rock Slide ": "5.794%",
+    "Endure ": "4.370%",
+    "Synthesis ": "3.578%",
+    "X-Scissor ": "2.739%",
+    "Endeavor ": "2.470%",
+    "Crunch ": "2.422%",
+    "Roar ": "2.414%",
+    "Brick Break ": "2.106%",
+    "Outrage ": "2.026%",
+    "Agility ": "1.892%",
+    "Solar Beam ": "1.718%",
+    "Frenzy Plant ": "1.686%",
+    "Iron Tail ": "1.678%",
+    "Solar Blade ": "1.678%",
+    "Power-Up Punch ": "1.551%",
+    "Quick Attack ": "1.179%",
+    "Detect ": "1.084%",
+    "Cross Poison ": "1.077%",
+    "Other": "19.061%"
   },
   "Teammates": {
-    "Dragapult": "27.236%",
-    "Ferrothorn": "23.233%",
-    "Heatran": "22.882%",
-    "Toxapex": "15.899%",
-    "Kartana": "15.022%",
-    "Weavile": "14.932%",
-    "Tapu Lele": "14.683%",
-    "Tapu Fini": "14.599%",
-    "Urshifu-Rapid-Strike": "14.121%",
-    "Corviknight": "12.239%",
-    "Melmetal": "11.858%"
+    "Garchomp": "13.750%",
+    "Blaziken": "13.306%",
+    "Tapu Koko": "11.090%",
+    "Swampert ": "9.847%",
+    "Charizard ": "9.626%",
+    "Dragapult ": "8.565%",
+    "Gengar ": "7.583%",
+    "Rillaboom ": "7.100%",
+    "Landorus-Therian ": "6.879%",
+    "Dragonite ": "6.784%",
+    "Hawlucha ": "6.554%"
   },
   "Checks and Counters": {
-    "Cloyster": [
-      "89.416",
-      "(91.04\u00b10.41)",
-      "42.4% KOed",
-      "48.7% switched out"
+    "Volcarona": [
+      "67.736",
+      "(77.09\u00b12.34)",
+      "48.3% KOed",
+      "28.8% switched out"
     ],
-    "Hawlucha": [
-      "83.644",
-      "(84.95\u00b10.33)",
-      "30.0% KOed",
-      "54.9% switched out"
+    "Celesteela": [
+      "65.669",
+      "(86.36\u00b15.17)",
+      "56.8% KOed",
+      "29.5% switched out"
     ],
-    "Weavile": [
-      "83.634",
-      "(84.52\u00b10.22)",
-      "28.5% KOed",
-      "56.1% switched out"
-    ],
-    "Inteleon": [
-      "83.397",
-      "(86.93\u00b10.88)",
-      "29.9% KOed",
-      "57.0% switched out"
-    ],
-    "Kyurem": [
-      "83.230",
-      "(84.64\u00b10.35)",
-      "29.9% KOed",
-      "54.8% switched out"
-    ],
-    "Eiscue": [
-      "82.832",
-      "(88.97\u00b11.53)",
-      "36.2% KOed",
-      "52.8% switched out"
-    ],
-    "Mamoswine": [
-      "82.714",
-      "(84.28\u00b10.39)",
-      "29.1% KOed",
-      "55.1% switched out"
-    ],
-    "Avalugg": [
-      "81.712",
-      "(85.98\u00b11.07)",
-      "16.6% KOed",
-      "69.4% switched out"
-    ],
-    "Gyarados": [
-      "80.317",
-      "(82.40\u00b10.52)",
-      "24.5% KOed",
-      "57.9% switched out"
-    ],
-    "Cramorant": [
-      "78.568",
-      "(87.44\u00b12.22)",
-      "23.8% KOed",
-      "63.7% switched out"
+    "Scizor": [
+      "65.438",
+      "(76.82\u00b12.85)",
+      "51.4% KOed",
+      "25.5% switched out"
     ],
     "Skarmory": [
-      "78.557",
-      "(80.21\u00b10.41)",
-      "5.2% KOed",
-      "75.1% switched out"
+      "62.708",
+      "(79.00\u00b14.07)",
+      "32.0% KOed",
+      "47.0% switched out"
     ],
-    "Buzzwole": [
-      "78.553",
-      "(79.78\u00b10.31)",
-      "25.0% KOed",
-      "54.8% switched out"
+    "Dragonite": [
+      "61.721",
+      "(72.53\u00b12.70)",
+      "57.5% KOed",
+      "15.0% switched out"
+    ],
+    "Weavile": [
+      "61.686",
+      "(72.34\u00b12.66)",
+      "57.4% KOed",
+      "14.9% switched out"
+    ],
+    "Melmetal": [
+      "58.331",
+      "(70.12\u00b12.95)",
+      "61.0% KOed",
+      "9.1% switched out"
+    ],
+    "Charizard": [
+      "57.796",
+      "(75.53\u00b14.43)",
+      "40.4% KOed",
+      "35.1% switched out"
+    ],
+    "Hawlucha": [
+      "57.636",
+      "(74.76\u00b14.28)",
+      "66.0% KOed",
+      "8.7% switched out"
+    ],
+    "Togekiss": [
+      "56.835",
+      "(73.83\u00b14.25)",
+      "53.3% KOed",
+      "20.6% switched out"
+    ],
+    "Zapdos": [
+      "55.969",
+      "(67.14\u00b12.79)",
+      "45.2% KOed",
+      "21.9% switched out"
+    ],
+    "Salamence": [
+      "53.537",
+      "(73.42\u00b14.97)",
+      "44.3% KOed",
+      "29.1% switched out"
     ]
   }
 }
