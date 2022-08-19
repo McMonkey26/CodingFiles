@@ -1,4 +1,4 @@
-import players, pygame
+import players, pygame, random
 from constants import *
 pygame.init()
 
@@ -30,21 +30,21 @@ world00 = [
 ]
 world10 = [
   '###############',
-  '#  CC  ## c   #',
-  '#      ####   #',
+  '#  CC     c   #',
+  '#      ####z  #',
   '##     ####   #',
-  '   S   ####    ',
-  '       ####    ',
-  '#####  ########'
+  '^  S   ####    ',
+  'v      ####    ',
+  '#####{}########'
 ]
 world20 = [
   '###############',
   '###############',
-  '#####   #######',
-  '####    #######',
-  '       ########',
+  '#####sss#######',
+  '####ssss#######',
+  '     ss########',
   '      #########',
-  '###############'
+  '####  #########'
 ]
 world01 = [
   '###############',
@@ -58,17 +58,17 @@ world01 = [
 world11 = [
   '#####  ########',
   '#####  ########',
-  '#####    ######',
-  '#####    ######',
+  '#####          ',
+  '#####          ',
   '###############',
   '###############',
   '###############'
 ]
 world21 = [
-  '###############',
-  '###############',
-  '###############',
-  '###############',
+  '####  #########',
+  '####  #########',
+  '      #########',
+  '      #########',
   '###############',
   '###############',
   '###############'
@@ -90,6 +90,10 @@ chestMaps = [
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
 ]
 enemyMaps = [
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
+]
+doorMaps = [
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
 ]
@@ -125,6 +129,27 @@ class KeyChest(pygame.sprite.Sprite):
   def open(self, player):
     player.keys.append(self.keyId)
     self.image.fill((51, 34, 12))
+class KeyDoor(pygame.sprite.Sprite):
+  def __init__(self, x, y, orient, id):
+    super().__init__()
+    self.image = pygame.Surface(((tileSize*2) if orient == 'h' else tileSize, tileSize if orient == 'h' else (tileSize*2)))
+    self.image.fill((84, 55, 21))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+    self.type = 'Door'
+    self.keyId = id
+  def open(self, player):
+    if self.keyId in player.keys: self.kill()
+class EnemyDoor(pygame.sprite.Sprite):
+  def __init__(self, x, y, orient):
+    super().__init__()
+    self.image = pygame.Surface(((tileSize*2) if orient == 'h' else tileSize, tileSize if orient == 'h' else (tileSize*2)))
+    self.image.fill((64, 48, 29))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+    self.type = 'Door'
+  def open(self, player):
+    if len([True for enemy in enemyMaps[player.world[1]][player.world[0]] if enemy.alive])==0:self.kill()
 class Slime(pygame.sprite.Sprite):
   def __init__(self, x, y, size):
     super().__init__()
@@ -138,12 +163,53 @@ class Slime(pygame.sprite.Sprite):
     self.size = size
     self.alive = True
   def interact(self, player):
-    if self.health <= 0:
+    if self.health <= 0 and self.alive:
       self.die(player)
   def die(self, player):
     self.image.fill((66, 42, 5))
     self.alive = False
     player.xp += 10*self.size
+class Zombie(pygame.sprite.Sprite):
+  def __init__(self, x, y, size):
+    super().__init__()
+    self.image = pygame.Surface((tileSize*size, tileSize*size))
+    self.image.fill((89, 145, 16))
+    self.bgImage = pygame.Surface((tileSize*size, tileSize*size))
+    self.bgImage.fill((128, 128, 128))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+    self.type = 'Enemy'
+    self.damage = 8*size
+    self.health = 100*size
+    self.size = size
+    self.speed = size
+    self.alive = True
+    self.movePath = {
+      (832, 128): [-32*self.speed,0],
+      (704, 128): [0, 32*self.speed],
+      (704, 320): [32*self.speed,0],
+      (832, 320): [0,-32*self.speed]
+    }
+    self.lastDirec = self.movePath[self.rect.topleft]
+
+  def interact(self, player):
+    if self.health <= 0 and self.alive:
+      self.die(player)
+  def die(self, player):
+    self.image.fill((20, 20, 20))
+    self.alive = False
+    player.xp += 30*self.size
+  def update(self, group):
+    if frame%10 == 0 and self.alive:
+      screen.blit(self.bgImage, self.rect)
+      if self.rect.topleft in self.movePath.keys():
+        self.lastDirec = self.movePath[self.rect.topleft]
+      self.rect.x += self.lastDirec[0]
+      self.rect.y += self.lastDirec[1]
+      if ((hits:=pygame.sprite.spritecollide(self, group, False)) and len(hits) > 1) or self.rect.x < 0 or self.rect.y < 0 or self.rect.right > tileSize*15 or self.rect.bottom > tileSize*7 or pygame.sprite.collide_rect(self, julian):
+        if pygame.sprite.collide_rect(self, julian): julian.hp -= self.damage
+        self.rect.x -= self.lastDirec[0]
+        self.rect.y -= self.lastDirec[1]
 class Dummy(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
@@ -183,39 +249,29 @@ for x in range(len(worldMaps)):
         elif worldMaps[x][y][line][tile] == 's':
           tempVariable = Slime(tile, line, 1)
           enemyMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == '{':
+          tempVariable = KeyDoor(tile, line, 'h', 'testingtesting123')
+          doorMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == '[':
+          tempVariable = KeyDoor(tile, line, 'v', 'testingtesting123')
+          doorMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == '<':
+          tempVariable = EnemyDoor(tile, line, 'h')
+          doorMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == '^':
+          tempVariable = EnemyDoor(tile, line, 'v')
+          doorMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == 'Z':
+          tempVariable = Zombie(tile, line, 2)
+          enemyMaps[x][y].add(tempVariable)
+        elif worldMaps[x][y][line][tile] == 'z':
+          tempVariable = Zombie(tile, line, 1)
+          enemyMaps[x][y].add(tempVariable)
         else:
           continue
         spriteMaps[x][y].add(tempVariable)
-all_sprites = pygame.sprite.Group()
-walls = pygame.sprite.Group()
-chests = pygame.sprite.Group()
-enemies = pygame.sprite.Group()
-for line in range(len(world)):
-  for tile in range(len(world[line])):
-    if world[line][tile] == '#':
-      tempVariable = Wall(tile, line)
-      walls.add(tempVariable)
-    elif world[line][tile] == 'C':
-      tempVariable = CoinChest(tile, line)
-      chests.add(tempVariable)
-    elif world[line][tile] == 'c':
-      tempVariable = KeyChest(tile, line, 'testingtesting123')
-      chests.add(tempVariable)
-    elif world[line][tile] == 'S':
-      tempVariable = Slime(tile, line, 2)
-      enemies.add(tempVariable)
-    elif world[line][tile] == 's':
-      tempVariable = Slime(tile, line, 1)
-      enemies.add(tempVariable)
-    else:
-      continue
-    all_sprites.add(tempVariable)
-tempVariable = Dummy(0, 7)
-all_sprites.add(tempVariable)
-enemies.add(tempVariable)
 julian = players.adventurer('Hawk Feather', 'Tabaxi', 81, [players.fight, players.elvenBow, players.flight, players.bomb], 'Hawk')
 def gameLoop():
-  # screen.fill((128, 128, 128))
   all_sprites.draw(screen)
   screen.blit(julian.image, julian.rect.topleft)
   screen.blit(julian.inv.image, (0, tileSize*7))
@@ -229,8 +285,12 @@ def worldLoop(world):
   players.testing.update(julian)
   screen.blit(players.testing.image, (tileSize*12, tileSize*7))
   pygame.display.flip()
+clock = pygame.time.Clock()
+frame = 0
 running = True
 while running:
+  clock.tick(60)
+  frame += 1
   for event in pygame.event.get():
     if event.type == pygame.QUIT:
       running = False
@@ -242,4 +302,9 @@ while running:
     julian.move(event, spriteMaps[julian.world[1]][julian.world[0]])
     julian.ability(event, screen, enemyMaps[julian.world[1]][julian.world[0]])
   julian.update(screen, enemyMaps[julian.world[1]][julian.world[0]])
+  for sprite in enemyMaps[julian.world[1]][julian.world[0]]:
+    try:
+      sprite.update(spriteMaps[julian.world[1]][julian.world[0]])
+    except AttributeError:
+      pass
   worldLoop(julian.world)

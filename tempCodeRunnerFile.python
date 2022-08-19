@@ -1,0 +1,10 @@
+class homo:
+  def __init__(self):
+    self.sapien = 'sexual'
+  def sexual(self):
+    print('gay')
+def weewoo(twelve):
+  print('what are you',twelve)
+gay = homo()
+gay.sexual()
+weewoo(gay)

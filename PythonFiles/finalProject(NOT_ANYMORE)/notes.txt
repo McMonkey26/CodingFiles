@@ -1,0 +1,56 @@
+Snake-esque game, but dialed after the food chain
+Start out as a small animal, go around eating plants and staying away from predators
+Once you eat enough food, you get sent to a menu and you can choose one of your predators to turn into (at a limited level, e.g. can't go from a rabbit to a mountain lion)
+win when you get to an apex predator
+if you hit an animal above your level that isnt a direct predator you go down a level
+if you hit an animal at your level you go back to 0 xp
+if you hit a direct predator you die
+rabbit DONE
+mouse DONE
+rat DONE
+small birds DONE
+large birds
+squirrels DONE
+insects DONE
+lizards DONE
+snakes DONE
+weasel
+ferret
+pine marten
+mongoose
+wild cats
+wild dogs
+badgers
+Panther
+Wolf
+Gator
+T-Rex DONE
+Evol Chains:
+T1:         T2:         T3:         T4:         TX:
+Rabbit      Rat         Marten      Large Birds T-Rex
+Mouse       Lizards     Wild Cats   Panther
+Small Birds Weasel/ferr Wild Dogs   Lion
+Squirrels   Snake                   Wolf
+Insects     Badger                  Gator
+tiger/lion/cheetah/
+Size Chains:
+Weasel -> Ferret -> Pine Marten
+Food Chains:
+hay, vegetables -> rabbit -> large birds, wild dogs, wild cats, snakes
+nuts, seeds, grains, berries, insects -> mouse/rat -> wild cats, weasel, ferret, mongoose, lizard, snake, large birds
+fruits, insects -> small birds -> cats, large birds, chipmunks, rats, snakes, raccoon
+-> large birds ->
+fruit, flowers, vegetables, nuts, insects -> squirrels -> large birds, cats, badgers, weasel, pine marten, snake, wild cats, wild dogs
+grass, leaves -> insects -> lizards, small birds, mouse, squirels
+insects -> lizards -> small birds, snakes
+Rabbit, mouse, small birds, squirrels -> snake -> wild cats, large birds, hedgehog, badger
+mouse, rabbit, squirrel -> weasel -> large birds, wild cats, snakes
+rabbit, mouse, rat -> ferret -> large birds, wild dogs, badgers, wild cats
+fruit, insects, mouse, rat, small bird, squirrel -> pine marten -> large bird, wild cat, wolf
+mouse, rat, small bird, rabbit, -> wild cats -> wolf, large bird
+mouse, rat, small bird, rabbit, squirrel -> wild dogs -> Gator
+mouse, rat, squirrel -> badgers -> wid dogs, wild cat, large bird
+-> panther ->
+-> wolf ->
+-> gator ->
+large birds, panther, wolf, gator -> T-Rex -> Nothing

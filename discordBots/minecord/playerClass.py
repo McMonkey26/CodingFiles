@@ -52,7 +52,7 @@ class Player:
     print('Tools:')
     print('{:20}Mines: {}'.format(self.pick.name, self.stats.mines))
     print('{:20}Chops: {}'.format(self.axe.name, self.stats.chops))
-    print('{:20}Fights: {}'.format('Placeholder Sword', self.stats.fights))
+    print('{:20}Fights: {}'.format(self.sword.name, self.stats.fights))
     print()
     print('Money: ${}'.format(self.money))
     print('Level: {}'.format(self.stats.lvl))
@@ -73,7 +73,7 @@ class Player:
       '{:20}'.format('Spruce: {}'.format(self.const.spruce.amount) if self.const.spruce.amount > 0 else ''))
   def upgrade(self, tool):#type, tool, cost):
     if tool.cost > self.money:
-      print('too broke L')
+      print(f'You need ${tool.cost}, but you only have ${self.money}')
       return None
     switch(tool.type)
     if case('pickaxe'):
@@ -83,7 +83,7 @@ class Player:
     elif case('sword'):
       self.sword = tool
     self.money -= tool.cost
-    print('Bought {} for ${}. You now have {}'.format(tool.name, tool.cost, self.money))
+    print('Bought {} for ${}. You now have ${}'.format(tool.name, tool.cost, self.money))
   def sell(self, material, amt):
     sold = True
     switch(material.lower())
@@ -150,31 +150,12 @@ class Player:
       self.woodSword = Tool('Wood Sword', [self.rotten], 0)
       self.stoneSword = Tool('Stone Sword', [self.bone], 1000)
       self.ironSword = Tool('Iron Sword', [self.gunpowder], 7500)
-stats = {
-  'moons':4,
-  'choop':16
-}
-with open('profiles.json','w') as outfile:
-  json.dump(stats, outfile, indent=2)
-with open('profiles.json', 'r') as infile:
-  data = json.load(infile)
-  print(data)
-b32Ids = [
-  '2394AHFD',
-  '3KN54379',
-  'GHK3245H'
-]
-b64Ids = [
-  'b34DSF67',
-  'a8n9SB98',
-  'SD90yds0'
-]
-def testId():
-  global ids
-  import random
-  base32choice = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'
-  base64choice = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/'
-  newId32 = ''
-  newId64 = ''
-  for i in range(8):
-    newId += random.choice(base32choice)
+# stats = {
+#   'moons':4,
+#   'choop':16
+# }
+# with open('profiles.json','w') as outfile:
+#   json.dump(stats, outfile, indent=2)
+# with open('profiles.json', 'r') as infile:
+#   data = json.load(infile)
+#   print(data)

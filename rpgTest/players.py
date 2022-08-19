@@ -5,7 +5,7 @@ class Cooldown(pygame.sprite.Sprite):
   def __init__(self):
     super().__init__()
     self.image = pygame.Surface((tileSize*3, tileSize*3))
-    self.image.fill((40, 40, 40))
+    self.image.fill((60, 60, 60))
     self.cdU = pygame.Surface((tileSize, tileSize))
     self.cdD = pygame.Surface((tileSize, tileSize))
     self.cdL = pygame.Surface((tileSize, tileSize))
@@ -80,103 +80,61 @@ class adventurer(pygame.sprite.Sprite):
     print('HP:',self.hp,'/',self.maxHp)
     print(str(type(self))[(str(type(self)).find('.') if not str(type(self)).find('.') == -1 else str(type(self)).find('\''))+1:-2])
   def move(self, event, group):
-    if event.type == pygame.KEYDOWN or event.type == pygame.KEYUP:
-      if event.key == pygame.K_a:
-        self.moveU.turn('l')
-        self.moveL.turn('l')
-        self.moveR.turn('l')
-        self.moveD.turn('l')
+    if (event.type == pygame.KEYDOWN or event.type == pygame.KEYUP) and self.hp > 0:
+      if event.key in [pygame.K_w, pygame.K_a, pygame.K_s, pygame.K_d]:
+        self.moveU.turn(event.key)
+        self.moveL.turn(event.key)
+        self.moveR.turn(event.key)
+        self.moveD.turn(event.key)
         if event.mod & pygame.KMOD_SHIFT:
           return None
-        self.rect.x -= (tileSize/2) * self.speed
-        self.pos[0] -= 0.5 * self.speed
-        if (hits:=pygame.sprite.spritecollide(self, group, False)):
-          self.rect.x += (tileSize/2) * self.speed
-          self.pos[0] += 0.5 * self.speed
-          for hit in hits:
-            if hit.type == 'Enemy':
-              self.hp -= hit.damage
-            elif hit.type == 'Chest':
-              hit.open(self)
-            elif hit.type == 'Wall':
-              pass
-        if self.rect.right <= 0 and self.world[0] > 0:
-          self.world[0] -= 1
-          self.rect.x = tileSize*width
-          self.pos[0] = width
-      elif event.key == pygame.K_w:
-        self.moveU.turn('u')
-        self.moveL.turn('u')
-        self.moveR.turn('u')
-        self.moveD.turn('u')
-        if event.mod & pygame.KMOD_SHIFT:
-          return None
-        self.rect.y -= (tileSize/2) * self.speed
-        self.pos[1] -= 0.5 * self.speed
-        if (hits:=pygame.sprite.spritecollide(self, group, False)):
-          self.rect.y += (tileSize/2) * self.speed
-          self.pos[1] += 0.5 * self.speed
-          for hit in hits:
-            if hit.type == 'Enemy':
-              self.hp -= hit.damage
-            elif hit.type == 'Chest':
-              hit.open(self)
-            elif hit.type == 'Wall':
-              pass
-        if self.rect.bottom <= 0 and self.world[1] > 0:
-          self.world[1] -= 1
-          self.rect.y = tileSize*height
-          self.pos[1] = height
-      elif event.key == pygame.K_d:
-        self.moveU.turn('r')
-        self.moveL.turn('r')
-        self.moveR.turn('r')
-        self.moveD.turn('r')
-        if event.mod & pygame.KMOD_SHIFT:
-          return None
-        self.rect.x += (tileSize/2) * self.speed
-        self.pos[0] += 0.5 * self.speed
-        if (hits:=pygame.sprite.spritecollide(self, group, False)):
-          self.rect.x -= (tileSize/2) * self.speed
-          self.pos[0] -= 0.5 * self.speed
-          for hit in hits:
-            if hit.type == 'Enemy':
-              self.hp -= hit.damage
-            elif hit.type == 'Chest':
-              hit.open(self)
-            elif hit.type == 'Wall':
-              pass
-        if self.rect.x >= tileSize*width and self.world[0] < 2:
-          self.world[0] += 1
-          self.rect.right = 0
-          self.pos[0] = -1
-      elif event.key == pygame.K_s:
-        self.moveU.turn('d')
-        self.moveL.turn('d')
-        self.moveR.turn('d')
-        self.moveD.turn('d')
-        if event.mod & pygame.KMOD_SHIFT:
-          return None
-        self.rect.y += (tileSize/2) * self.speed
-        self.pos[1] += 0.5 * self.speed
-        if (hits:=pygame.sprite.spritecollide(self, group, False)):
-          self.rect.y -= (tileSize/2) * self.speed
-          self.pos[1] -= 0.5 * self.speed
-          for hit in hits:
-            if hit.type == 'Enemy':
-              self.hp -= hit.damage
-            elif hit.type == 'Chest':
-              hit.open(self)
-            elif hit.type == 'Wall':
-              pass
-        if self.rect.y >= tileSize*7 and self.world[0] < 1:
-          self.world[1] += 1
-          self.rect.bottom = 0
-          self.pos[1] = -1
-      print((self.rect.x, self.rect.y))
-      print((self.rect.right, self.rect.bottom))
+      moveValues = [0, 0]
+      if event.key == pygame.K_a: moveValues[0] = -0.5*self.speed
+      if event.key == pygame.K_w: moveValues[1] = -0.5*self.speed
+      if event.key == pygame.K_d: moveValues[0] = 0.5*self.speed
+      if event.key == pygame.K_s: moveValues[1] = 0.5*self.speed
+      self.rect.x += tileSize*moveValues[0]
+      self.rect.y += tileSize*moveValues[1]
+      self.pos[0] += moveValues[0]
+      self.pos[1] += moveValues[1]
+      if (hits:=pygame.sprite.spritecollide(self, group, False)):
+        self.rect.x -= tileSize*moveValues[0]
+        self.rect.y -= tileSize*moveValues[1]
+        self.pos[0] -= moveValues[0]
+        self.pos[1] -= moveValues[1]
+        print([hit.type for hit in hits])
+        for hit in hits:
+          if hit.type == 'Enemy':
+            if hit.alive: self.hp -= hit.damage
+          elif hit.type == 'Chest':
+            hit.open(self)
+          elif hit.type == 'Door':
+            hit.open(self)
+          elif hit.type == 'Wall':
+            pass
+      if self.rect.right <= 0 and self.world[0] > 0:
+        print('go to left')
+        self.world[0] -= 1
+        self.rect.x = tileSize*width
+        self.pos[0] = width
+      elif self.rect.bottom <= 0 and self.world[1] > 0:
+        print('go to top')
+        self.world[1] -= 1
+        self.rect.y = tileSize*height
+        self.pos[1] = height
+      elif self.rect.x >= tileSize*width and self.world[0] < 2:
+        print('go to right')
+        self.world[0] += 1
+        self.rect.right = 0
+        self.pos[0] = -1
+      elif self.rect.y >= tileSize*7 and self.world[1] < 1:
+        print('go to bottom')
+        self.world[1] += 1
+        self.rect.bottom = 0
+        self.pos[1] = -1
+      print((self.rect.x, self.rect.y),'->',(self.rect.right, self.rect.bottom),'World',self.world)
   def ability(self, event, screen, group):
-    if event.type == pygame.KEYDOWN:
+    if event.type == pygame.KEYDOWN and self.hp > 0:
       try:
         self.useWeapon(self.weaponKeys[event.key], group, screen)
       except KeyError:
@@ -190,13 +148,18 @@ class adventurer(pygame.sprite.Sprite):
       enemy.interact(self)
     pygame.draw.rect(screen, (255, 0, 0), self.hurtbox(weapon))
   def hurtbox(self, weapon):
-    return scale(offset(weapon.rect, self.pos), tileSize)
+    return offset(scale(weapon.rect, tileSize), self.rect.topleft)
   def update(self, screen, group):
+    if self.hp == 0: return None
     key = pygame.key.get_pressed()
     if key[pygame.K_UP]: self.useWeapon(self.weaponKeys[pygame.K_UP], group, screen)
     if key[pygame.K_DOWN]: self.useWeapon(self.weaponKeys[pygame.K_DOWN], group, screen)
     if key[pygame.K_LEFT]: self.useWeapon(self.weaponKeys[pygame.K_LEFT], group, screen)
     if key[pygame.K_RIGHT]: self.useWeapon(self.weaponKeys[pygame.K_RIGHT], group, screen)
+    if self.hp <= 0: self.hp = 0
+    if self.mana <= 0: self.mana = 0
+    if self.xp <= 0: self.xp = 0
+    self.inv.update()
 class Paladin(adventurer):
   def __init__(self, name, race, health, moves=[None, None, None], nick=None):
     super().__init__(name, race, health, moves, nick)
@@ -220,10 +183,10 @@ class weapon:
     self.cooldown = stamina / 100
     self.nextUse = time.time()
   def turn(self, direction):
-    if direction == 'u': self.rect = pygame.Rect(self.defRect.y, -self.defRect.x - self.defRect.width + 1, self.defRect.height, self.defRect.width)
-    if direction == 'd': self.rect = pygame.Rect(self.defRect.y, self.defRect.x, self.defRect.height, self.defRect.width)
-    if direction == 'l': self.rect = pygame.Rect(-self.defRect.x - self.defRect.width + 1, self.defRect.y, self.defRect.width, self.defRect.height)
-    if direction == 'r': self.rect = pygame.Rect(self.defRect.x, self.defRect.y, self.defRect.width, self.defRect.height)
+    if direction == pygame.K_w: self.rect = pygame.Rect(self.defRect.y, -self.defRect.x - self.defRect.width + 1, self.defRect.height, self.defRect.width)
+    if direction == pygame.K_s: self.rect = pygame.Rect(self.defRect.y, self.defRect.x, self.defRect.height, self.defRect.width)
+    if direction == pygame.K_a: self.rect = pygame.Rect(-self.defRect.x - self.defRect.width + 1, self.defRect.y, self.defRect.width, self.defRect.height)
+    if direction == pygame.K_d: self.rect = pygame.Rect(self.defRect.x, self.defRect.y, self.defRect.width, self.defRect.height)
   def checkCooldown(self):
     return (time.time() < self.nextUse)
   def use(self):

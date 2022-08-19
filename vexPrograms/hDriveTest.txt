@@ -1,0 +1,145 @@
+#region VEXcode Generated Robot Configuration
+from vex import *
+import urandom
+
+# Brain should be defined by default
+brain=Brain()
+
+# Robot configuration code
+controller_1 = Controller(PRIMARY)
+left_motor_a = Motor(Ports.PORT1, GearSetting.RATIO_18_1, True)
+left_motor_b = Motor(Ports.PORT11, GearSetting.RATIO_18_1, True)
+left_drive_smart = MotorGroup(left_motor_a, left_motor_b)
+right_motor_a = Motor(Ports.PORT2, GearSetting.RATIO_18_1, False)
+right_motor_b = Motor(Ports.PORT12, GearSetting.RATIO_18_1, False)
+right_drive_smart = MotorGroup(right_motor_a, right_motor_b)
+drivetrain = DriveTrain(left_drive_smart, right_drive_smart, 319.19, 18.034, 368.29999999999995, MM, 1.6666666666666667)
+hDrive = Motor(Ports.PORT3, GearSetting.RATIO_18_1, False)
+flyWheelMotorA = Motor(Ports.PORT4, GearSetting.RATIO_18_1, False)
+flyWheelMotorB = Motor(Ports.PORT5, GearSetting.RATIO_18_1, False)
+flyWheel = MotorGroup(flyWheelMotorA, flyWheelMotorB)
+
+
+# wait for rotation sensor to fully initialize
+wait(30, MSEC)
+
+# define variables used for controlling motors based on controller inputs
+drivetrain_l_needs_to_be_stopped_controller_1 = False
+drivetrain_r_needs_to_be_stopped_controller_1 = False
+hDrive_needs_to_be_stopped_controller_1 = False
+directionMod = 1
+flyWheelToggle = False
+
+# define a task that will handle monitoring inputs from controller_1
+def rc_auto_loop_function_controller_1():
+    global drivetrain_l_needs_to_be_stopped_controller_1, drivetrain_r_needs_to_be_stopped_controller_1, hDrive_needs_to_be_stopped_controller_1, remote_control_code_enabled
+    # process the controller input every 20 milliseconds
+    # update the motors based on the input values
+    while True:
+        if remote_control_code_enabled:
+            # calculate the drivetrain motor velocities from the controller joystick axies
+            # left = axis3 + axis1
+            # right = axis3 - axis1
+            # strafe = axis4
+            drivetrain_left_side_speed = directionMod*(controller_1.axis3.position()) + controller_1.axis1.position()
+            drivetrain_right_side_speed = directionMod*(controller_1.axis3.position()) - controller_1.axis1.position()
+            hDrive_speed = directionMod*(controller_1.axis4.position())
+            
+            # check if the value is inside of the deadband range
+            if hDrive_speed < 5 and hDrive_speed > -5:
+                # check if the h-drive has already been stopped
+                if hDrive_needs_to_be_stopped_controller_1:
+                    # stop the h-drive
+                    hDrive.stop()
+                    # tell the code that the h-drive has been stopped
+                    hDrive_needs_to_be_stopped_controller_1 = False
+            else:
+                # reset the toggle so that the deadband code knows to stop the h-drive next
+                # time the input is in the deadband range
+                hDrive_needs_to_be_stopped_controller_1 = True
+            # check if the value is inside of the deadband range
+            if drivetrain_left_side_speed < 5 and drivetrain_left_side_speed > -5:
+                # check if the left motor has already been stopped
+                if drivetrain_l_needs_to_be_stopped_controller_1:
+                    # stop the left drive motor
+                    left_drive_smart.stop()
+                    # tell the code that the left motor has been stopped
+                    drivetrain_l_needs_to_be_stopped_controller_1 = False
+            else:
+                # reset the toggle so that the deadband code knows to stop the left motor next
+                # time the input is in the deadband range
+                drivetrain_l_needs_to_be_stopped_controller_1 = True
+            # check if the value is inside of the deadband range
+            if drivetrain_right_side_speed < 5 and drivetrain_right_side_speed > -5:
+                # check if the right motor has already been stopped
+                if drivetrain_r_needs_to_be_stopped_controller_1:
+                    # stop the right drive motor
+                    right_drive_smart.stop()
+                    # tell the code that the right motor has been stopped
+                    drivetrain_r_needs_to_be_stopped_controller_1 = False
+            else:
+                # reset the toggle so that the deadband code knows to stop the right motor next
+                # time the input is in the deadband range
+                drivetrain_r_needs_to_be_stopped_controller_1 = True
+            
+            # only tell the h-drive to spin if the values are not in the deadband range
+            if hDrive_needs_to_be_stopped_controller_1:
+                hDrive.set_velocity(hDrive_speed, PERCENT)
+                hDrive.spin(FORWARD)
+            # only tell the left drive motor to spin if the values are not in the deadband range
+            if drivetrain_l_needs_to_be_stopped_controller_1:
+                left_drive_smart.set_velocity(drivetrain_left_side_speed, PERCENT)
+                left_drive_smart.spin(FORWARD)
+            # only tell the right drive motor to spin if the values are not in the deadband range
+            if drivetrain_r_needs_to_be_stopped_controller_1:
+                right_drive_smart.set_velocity(drivetrain_right_side_speed, PERCENT)
+                right_drive_smart.spin(FORWARD)
+            if flyWheelToggle:
+                flyWheel.set_velocity(100, PERCENT)
+                flyWheel.spin(FORWARD)
+            else:
+                flyWheel.stop()
+        # wait before repeating the process
+        wait(20, MSEC)
+
+# define variable for remote controller enable/disable
+remote_control_code_enabled = True
+rc_auto_loop_thread_controller_1 = Thread(rc_auto_loop_function_controller_1)
+
+
+
+#endregion VEXcode Generated Robot Configuration
+
+# ------------------------------------------
+# 
+# 	Project:      VEXcode Project
+#	Author:       VEX
+#	Created:
+#	Description:  VEXcode V5 Python Project
+# 
+# ------------------------------------------
+
+# Library imports
+from vex import *
+
+# Begin project code
+
+
+def switchDirections():
+    global directionMod
+    directionMod *= -1
+
+def toggleFlyWheel():
+    global flyWheelToggle
+    flyWheelToggle = not flyWheelToggle
+    if flyWheelToggle:
+        controller_1.rumble("-.-.")
+
+controller_1.buttonY.pressed(switchDirections)
+controller_1.buttonA.pressed(toggleFlyWheel)
+
+drivetrain.set_drive_velocity(100, PERCENT)
+drivetrain.set_turn_velocity(100, PERCENT)
+drivetrain.set_stopping(BRAKE)
+hDrive.set_velocity(100, PERCENT)
+hDrive.set_stopping(BRAKE)
