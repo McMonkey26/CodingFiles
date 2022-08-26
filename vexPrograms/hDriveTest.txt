@@ -15,9 +15,7 @@ right_motor_b = Motor(Ports.PORT12, GearSetting.RATIO_18_1, False)
 right_drive_smart = MotorGroup(right_motor_a, right_motor_b)
 drivetrain = DriveTrain(left_drive_smart, right_drive_smart, 319.19, 18.034, 368.29999999999995, MM, 1.6666666666666667)
 hDrive = Motor(Ports.PORT3, GearSetting.RATIO_18_1, False)
-flyWheelMotorA = Motor(Ports.PORT4, GearSetting.RATIO_18_1, False)
-flyWheelMotorB = Motor(Ports.PORT5, GearSetting.RATIO_18_1, False)
-flyWheel = MotorGroup(flyWheelMotorA, flyWheelMotorB)
+flyWheel = Motor(Ports.PORT4, GearSetting.RATIO_36_1, True)
 
 
 # wait for rotation sensor to fully initialize
@@ -124,7 +122,18 @@ from vex import *
 
 # Begin project code
 
-
+def onDriverControl():
+    global flyWheelToggle
+    maxSpeed = 0
+    while True:
+        if flyWheelToggle:
+            controller_1.screen.set_cursor(3,1)
+            controller_1.screen.print(flyWheel.velocity(RPM))
+            controller_1.screen.print("|")
+            controller_1.screen.print(maxSpeed)
+            if flyWheel.velocity(RPM) > maxSpeed:
+                maxSpeed = flyWheel.velocity(RPM)
+            wait(50, MSEC)
 def switchDirections():
     global directionMod
     directionMod *= -1
@@ -132,12 +141,25 @@ def switchDirections():
 def toggleFlyWheel():
     global flyWheelToggle
     flyWheelToggle = not flyWheelToggle
+    controller_1.rumble(".")
     if flyWheelToggle:
         controller_1.rumble("-.-.")
+        brain.timer.clear()
+    else:
+        controller_1.screen.set_cursor(3,1)
+        controller_1.screen.print("Ran ")
+        controller_1.screen.print(brain.timer.time(SECONDS))
+        controller_1.screen.print("s")
 
+def flyWheelSpeed():
+    controller_1.screen.print(flyWheel.velocity(RPM))
+    controller_1.screen.set_cursor(3, 1)
+reachedMax = False
+driverControlThread = Thread(onDriverControl)
 controller_1.buttonY.pressed(switchDirections)
 controller_1.buttonA.pressed(toggleFlyWheel)
-
+controller_1.buttonB.pressed(flyWheelSpeed)
+controller_1.screen.clear_screen()
 drivetrain.set_drive_velocity(100, PERCENT)
 drivetrain.set_turn_velocity(100, PERCENT)
 drivetrain.set_stopping(BRAKE)
