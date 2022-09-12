@@ -7,91 +7,108 @@ brain=Brain()
 
 # Robot configuration code
 controller_1 = Controller(PRIMARY)
-left_motor_a = Motor(Ports.PORT1, GearSetting.RATIO_18_1, True)
-left_motor_b = Motor(Ports.PORT11, GearSetting.RATIO_18_1, True)
-left_drive_smart = MotorGroup(left_motor_a, left_motor_b)
-right_motor_a = Motor(Ports.PORT2, GearSetting.RATIO_18_1, False)
-right_motor_b = Motor(Ports.PORT12, GearSetting.RATIO_18_1, False)
-right_drive_smart = MotorGroup(right_motor_a, right_motor_b)
-drivetrain = DriveTrain(left_drive_smart, right_drive_smart, 319.19, 18.034, 368.29999999999995, MM, 1.6666666666666667)
-hDrive = Motor(Ports.PORT3, GearSetting.RATIO_18_1, False)
-flyWheel = Motor(Ports.PORT4, GearSetting.RATIO_36_1, True)
+left_motor_front = Motor(Ports.PORT1, GearSetting.RATIO_18_1, False)
+left_motor_back = Motor(Ports.PORT11, GearSetting.RATIO_18_1, False)
+right_motor_front = Motor(Ports.PORT2, GearSetting.RATIO_18_1, True)
+right_motor_back = Motor(Ports.PORT12, GearSetting.RATIO_18_1, True)
+flyWheel = Motor(Ports.PORT4, GearSetting.RATIO_6_1, True)
 
 
 # wait for rotation sensor to fully initialize
 wait(30, MSEC)
 
 # define variables used for controlling motors based on controller inputs
-drivetrain_l_needs_to_be_stopped_controller_1 = False
-drivetrain_r_needs_to_be_stopped_controller_1 = False
-hDrive_needs_to_be_stopped_controller_1 = False
-directionMod = 1
+drivetrain_l_f_needs_to_be_stopped_controller_1 = False
+drivetrain_l_b_needs_to_be_stopped_controller_1 = False
+drivetrain_r_f_needs_to_be_stopped_controller_1 = False
+drivetrain_r_b_needs_to_be_stopped_controller_1 = False
 flyWheelToggle = False
+reachedMax = False
 
 # define a task that will handle monitoring inputs from controller_1
 def rc_auto_loop_function_controller_1():
-    global drivetrain_l_needs_to_be_stopped_controller_1, drivetrain_r_needs_to_be_stopped_controller_1, hDrive_needs_to_be_stopped_controller_1, remote_control_code_enabled
+    global drivetrain_l_f_needs_to_be_stopped_controller_1, drivetrain_l_b_needs_to_be_stopped_controller_1, drivetrain_r_f_needs_to_be_stopped_controller_1, drivetrain_r_b_needs_to_be_stopped_controller_1, hDrive_needs_to_be_stopped_controller_1, remote_control_code_enabled
     # process the controller input every 20 milliseconds
     # update the motors based on the input values
     while True:
         if remote_control_code_enabled:
             # calculate the drivetrain motor velocities from the controller joystick axies
-            # left = axis3 + axis1
-            # right = axis3 - axis1
-            # strafe = axis4
-            drivetrain_left_side_speed = directionMod*(controller_1.axis3.position()) + controller_1.axis1.position()
-            drivetrain_right_side_speed = directionMod*(controller_1.axis3.position()) - controller_1.axis1.position()
-            hDrive_speed = directionMod*(controller_1.axis4.position())
+            # move forward: lf+, lb+, rf+, rb+
+            # move backwards: lf-, lb-, rf-, rb-
+            # strafe left: lf-, lb+, rf+, rb-
+            # strafe right: lf+, lb-, rf-, rb+
+            # turn left: lf-, lb-, rf+, rb+
+            # turn right: lf+, lb+, rf-, rb-
+            left_front_speed = controller_1.axis3.position() + controller_1.axis4.position() + controller_1.axis1.position()
+            left_back_speed = controller_1.axis3.position() - controller_1.axis4.position() + controller_1.axis1.position()
+            right_front_speed = controller_1.axis3.position() - controller_1.axis4.position() - controller_1.axis1.position()
+            right_back_speed = controller_1.axis3.position() + controller_1.axis4.position() - controller_1.axis1.position()
             
             # check if the value is inside of the deadband range
-            if hDrive_speed < 5 and hDrive_speed > -5:
-                # check if the h-drive has already been stopped
-                if hDrive_needs_to_be_stopped_controller_1:
-                    # stop the h-drive
-                    hDrive.stop()
-                    # tell the code that the h-drive has been stopped
-                    hDrive_needs_to_be_stopped_controller_1 = False
-            else:
-                # reset the toggle so that the deadband code knows to stop the h-drive next
-                # time the input is in the deadband range
-                hDrive_needs_to_be_stopped_controller_1 = True
-            # check if the value is inside of the deadband range
-            if drivetrain_left_side_speed < 5 and drivetrain_left_side_speed > -5:
+            if left_front_speed < 5 and left_front_speed > -5:
                 # check if the left motor has already been stopped
-                if drivetrain_l_needs_to_be_stopped_controller_1:
+                if drivetrain_l_f_needs_to_be_stopped_controller_1:
                     # stop the left drive motor
-                    left_drive_smart.stop()
+                    left_motor_front.stop()
                     # tell the code that the left motor has been stopped
-                    drivetrain_l_needs_to_be_stopped_controller_1 = False
+                    drivetrain_l_f_needs_to_be_stopped_controller_1 = False
             else:
                 # reset the toggle so that the deadband code knows to stop the left motor next
                 # time the input is in the deadband range
-                drivetrain_l_needs_to_be_stopped_controller_1 = True
+                drivetrain_l_f_needs_to_be_stopped_controller_1 = True
             # check if the value is inside of the deadband range
-            if drivetrain_right_side_speed < 5 and drivetrain_right_side_speed > -5:
+            if left_back_speed < 5 and left_back_speed > -5:
+                # check if the left motor has already been stopped
+                if drivetrain_l_b_needs_to_be_stopped_controller_1:
+                    # stop the left drive motor
+                    left_motor_back.stop()
+                    # tell the code that the left motor has been stopped
+                    drivetrain_l_b_needs_to_be_stopped_controller_1 = False
+            else:
+                # reset the toggle so that the deadband code knows to stop the left motor next
+                # time the input is in the deadband range
+                drivetrain_l_b_needs_to_be_stopped_controller_1 = True
+            # check if the value is inside of the deadband range
+            if right_front_speed < 5 and right_front_speed > -5:
                 # check if the right motor has already been stopped
-                if drivetrain_r_needs_to_be_stopped_controller_1:
+                if drivetrain_r_f_needs_to_be_stopped_controller_1:
                     # stop the right drive motor
-                    right_drive_smart.stop()
+                    right_motor_front.stop()
                     # tell the code that the right motor has been stopped
-                    drivetrain_r_needs_to_be_stopped_controller_1 = False
+                    drivetrain_r_f_needs_to_be_stopped_controller_1 = False
             else:
                 # reset the toggle so that the deadband code knows to stop the right motor next
                 # time the input is in the deadband range
-                drivetrain_r_needs_to_be_stopped_controller_1 = True
+                drivetrain_r_f_needs_to_be_stopped_controller_1 = True
+            # check if the value is inside of the deadband range
+            if right_back_speed < 5 and right_back_speed > -5:
+                # check if the right motor has already been stopped
+                if drivetrain_r_b_needs_to_be_stopped_controller_1:
+                    # stop the right drive motor
+                    right_motor_back.stop()
+                    # tell the code that the right motor has been stopped
+                    drivetrain_r_b_needs_to_be_stopped_controller_1 = False
+            else:
+                # reset the toggle so that the deadband code knows to stop the right motor next
+                # time the input is in the deadband range
+                drivetrain_r_b_needs_to_be_stopped_controller_1 = True
             
-            # only tell the h-drive to spin if the values are not in the deadband range
-            if hDrive_needs_to_be_stopped_controller_1:
-                hDrive.set_velocity(hDrive_speed, PERCENT)
-                hDrive.spin(FORWARD)
-            # only tell the left drive motor to spin if the values are not in the deadband range
-            if drivetrain_l_needs_to_be_stopped_controller_1:
-                left_drive_smart.set_velocity(drivetrain_left_side_speed, PERCENT)
-                left_drive_smart.spin(FORWARD)
-            # only tell the right drive motor to spin if the values are not in the deadband range
-            if drivetrain_r_needs_to_be_stopped_controller_1:
-                right_drive_smart.set_velocity(drivetrain_right_side_speed, PERCENT)
-                right_drive_smart.spin(FORWARD)
+            # only tell the left front motor to spin if the values are not in the deadband range
+            if drivetrain_l_f_needs_to_be_stopped_controller_1:
+                left_motor_front.set_velocity(left_front_speed, PERCENT)
+                left_motor_front.spin(FORWARD)
+            # only tell the left back motor to spin if the values are not in the deadband range
+            if drivetrain_l_b_needs_to_be_stopped_controller_1:
+                left_motor_back.set_velocity(left_back_speed, PERCENT)
+                left_motor_back.spin(FORWARD)
+            # only tell the right front motor to spin if the values are not in the deadband range
+            if drivetrain_r_f_needs_to_be_stopped_controller_1:
+                right_motor_front.set_velocity(right_front_speed, PERCENT)
+                right_motor_front.spin(FORWARD)
+            # only tell the right back motor to spin if the values are not in the deadband range
+            if drivetrain_r_b_needs_to_be_stopped_controller_1:
+                right_motor_back.set_velocity(right_back_speed, PERCENT)
+                right_motor_back.spin(FORWARD)
             if flyWheelToggle:
                 flyWheel.set_velocity(100, PERCENT)
                 flyWheel.spin(FORWARD)
@@ -134,9 +151,6 @@ def onDriverControl():
             if flyWheel.velocity(RPM) > maxSpeed:
                 maxSpeed = flyWheel.velocity(RPM)
             wait(50, MSEC)
-def switchDirections():
-    global directionMod
-    directionMod *= -1
 
 def toggleFlyWheel():
     global flyWheelToggle
@@ -151,17 +165,14 @@ def toggleFlyWheel():
         controller_1.screen.print(brain.timer.time(SECONDS))
         controller_1.screen.print("s")
 
-def flyWheelSpeed():
-    controller_1.screen.print(flyWheel.velocity(RPM))
-    controller_1.screen.set_cursor(3, 1)
-reachedMax = False
 driverControlThread = Thread(onDriverControl)
-controller_1.buttonY.pressed(switchDirections)
 controller_1.buttonA.pressed(toggleFlyWheel)
-controller_1.buttonB.pressed(flyWheelSpeed)
 controller_1.screen.clear_screen()
-drivetrain.set_drive_velocity(100, PERCENT)
-drivetrain.set_turn_velocity(100, PERCENT)
-drivetrain.set_stopping(BRAKE)
-hDrive.set_velocity(100, PERCENT)
-hDrive.set_stopping(BRAKE)
+left_motor_front.set_velocity(100, PERCENT)
+left_motor_front.set_stopping(BRAKE)
+left_motor_back.set_velocity(100, PERCENT)
+left_motor_back.set_stopping(BRAKE)
+right_motor_front.set_velocity(100, PERCENT)
+right_motor_front.set_stopping(BRAKE)
+right_motor_back.set_velocity(100, PERCENT)
+right_motor_back.set_stopping(BRAKE)
