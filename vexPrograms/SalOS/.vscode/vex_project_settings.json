@@ -4,12 +4,12 @@
 		"json": 1
 	},
 	"project": {
-		"name": "SalOS",
+		"name": "xDrive",
 		"description": "",
 		"creationDate": "Fri Sep 09 2022",
 		"platform": "V5",
 		"language": "python",
-		"slot": 1,
+		"slot": 3,
 		"sdkVersion": "V5_1_0_1_14",
 		"python": {
 			"main": "src/main.py"

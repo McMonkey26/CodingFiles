@@ -17,8 +17,7 @@ world = [
   '##     ####   #',
   '   S   ####    ',
   '       ####    ',
-  '#####  ########'
-]
+  '#####  ########']
 world00 = [
   '###############',
   '###############',
@@ -26,8 +25,7 @@ world00 = [
   '####   ########',
   '####           ',
   '####           ',
-  '###############'
-]
+  '###############']
 world10 = [
   '###############',
   '#  CC     c   #',
@@ -35,8 +33,7 @@ world10 = [
   '##     ####   #',
   '^  S   ####    ',
   'v      ####    ',
-  '#####{}########'
-]
+  '#####{}########']
 world20 = [
   '###############',
   '###############',
@@ -44,8 +41,7 @@ world20 = [
   '####ssss#######',
   '     ss########',
   '      #########',
-  '####  #########'
-]
+  '####  #########']
 world01 = [
   '###############',
   '###############',
@@ -53,8 +49,7 @@ world01 = [
   '###############',
   '###############',
   '###############',
-  '###############'
-]
+  '###############']
 world11 = [
   '#####  ########',
   '#####  ########',
@@ -62,8 +57,7 @@ world11 = [
   '#####          ',
   '###############',
   '###############',
-  '###############'
-]
+  '###############']
 world21 = [
   '####  #########',
   '####  #########',
@@ -71,32 +65,25 @@ world21 = [
   '      #########',
   '###############',
   '###############',
-  '###############'
-]
+  '###############']
 worldMaps = [
   [world00, world10, world20],
-  [world01, world11, world21]
-]
+  [world01, world11, world21]]
 spriteMaps = [
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
-  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
-]
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]]
 wallMaps = [
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
-  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
-]
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]]
 chestMaps = [
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
-  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
-]
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]]
 enemyMaps = [
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
-  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
-]
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]]
 doorMaps = [
   [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()],
-  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]
-]
+  [pygame.sprite.Group(), pygame.sprite.Group(), pygame.sprite.Group()]]
 class Wall(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
@@ -188,10 +175,8 @@ class Zombie(pygame.sprite.Sprite):
       (832, 128): [-32*self.speed,0],
       (704, 128): [0, 32*self.speed],
       (704, 320): [32*self.speed,0],
-      (832, 320): [0,-32*self.speed]
-    }
+      (832, 320): [0,-32*self.speed]}
     self.lastDirec = self.movePath[self.rect.topleft]
-
   def interact(self, player):
     if self.health <= 0 and self.alive:
       self.die(player)

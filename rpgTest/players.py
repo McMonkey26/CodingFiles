@@ -70,8 +70,7 @@ class adventurer(pygame.sprite.Sprite):
       pygame.K_LEFT: self.moveL,
       pygame.K_RIGHT: self.moveR,
       pygame.K_UP: self.moveU,
-      pygame.K_DOWN: self.moveD
-    }
+      pygame.K_DOWN: self.moveD}
     self.inv = inventory.Inventory(self)
     self.world = [1, 0]
   def show(self):
