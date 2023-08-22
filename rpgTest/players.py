@@ -167,7 +167,7 @@ class weapon:
   def __init__(self, id, name, type, damage, dType, hBox, stamina):
     self.id = id
     try:
-      self.image = pygame.image.load(f'/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/rpgTest/images/{self.id}.png')
+      self.image = pygame.image.load(f'/Users/jpollack/Desktop/CodingFiles/CodingFiles/rpgTest/images/{self.id}.png')
       self.image = pygame.transform.scale(self.image, (tileSize, tileSize))
     except FileNotFoundError:
       self.image = pygame.Surface((tileSize, tileSize))
@@ -202,3 +202,4 @@ fight = weapon('fight', 'Fight', 'sword', 15, 'Normal', (1, 0, 2, 1), 25)
 elvenBow = weapon('elvenBow', 'Elven Bow', 'bow', 20, 'Projectile', (1,0,5,1), 50)
 flight = weapon('flight', 'Flight', 'sword', 15, 'Normal', (1, 0, 2, 1), 25)
 bomb = weapon('bomb', 'Bomb', 'explosive', 30, 'Blast', (2,-1,3,3), 70)
+crescentRose = weapon('crescentRose', 'Crescent Rose', 'scythe', 25, 'Normal', (1,-1,2,3), 40)

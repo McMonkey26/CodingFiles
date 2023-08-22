@@ -1,6 +1,6 @@
 import pygame, random, os
 from switch import *
-os.chdir('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/pacman')
+os.chdir('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/pacman')
 
 #initializes pygame, and creates a blank screen surface
 pygame.init()

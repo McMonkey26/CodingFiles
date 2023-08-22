@@ -15,7 +15,7 @@ class Road(pygame.sprite.Sprite):
   def __init__(self, yLevel):
     super().__init__()
     self.image = pygame.Surface((600, 600))
-    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/road.png').convert_alpha()
+    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/road.png').convert_alpha()
     self.image = pygame.transform.scale(self.image, (600, 600))
     self.rect = self.image.get_rect()
     self.rect.topleft = (0, yLevel)
@@ -32,7 +32,7 @@ class Base(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
     self.image = pygame.Surface((80, 80))
-    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/base.png').convert_alpha()
+    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/base.png').convert_alpha()
     self.image = pygame.transform.scale(self.image, (80,80))
     self.rect = self.image.get_rect()
     self.rect.center = (x, y)
@@ -54,7 +54,7 @@ class Coin(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
     self.image = pygame.Surface((40, 40))
-    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/rings.png').convert_alpha()
+    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/rings.png').convert_alpha()
     self.image = pygame.transform.scale(self.image, (40, 40))
     self.rect = self.image.get_rect()
     self.rect.center = (x, y)
@@ -67,7 +67,7 @@ class Car(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
     self.image = pygame.Surface((100, 180))
-    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/guschillin.png').convert_alpha()
+    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/guschillin.png').convert_alpha()
     self.image = pygame.transform.scale(self.image, (100, 180))
     self.rect = self.image.get_rect()
     self.rect.center = (x, y)
@@ -83,7 +83,7 @@ class Car(pygame.sprite.Sprite):
     return pygame.sprite.spritecollide(self, group, False)
   def crash(self):
     global crashed
-    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/deadGus.png').convert_alpha()
+    self.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/deadGus.png').convert_alpha()
     self.image = pygame.transform.scale(self.image, (100, 180))
     crashed = True
   def move(self):
@@ -166,7 +166,7 @@ def winScreen():
         for sprite in coins:
           sprite.kill()
         carSprite.rect.center = (width/2, height/2)
-        carSprite.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/guschillin.png').convert_alpha()
+        carSprite.image = pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/guschillin.png').convert_alpha()
         carSprite.image = pygame.transform.scale(carSprite.image, (100, 180))
         carSprite.coinText = pygame.font.SysFont('arial', 30).render('Coins: {}'.format(carSprite.coins), True, (100, 255, 100))
         carSprite.coinRect = carSprite.coinText.get_rect(topright=(width, 0))

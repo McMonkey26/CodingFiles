@@ -87,8 +87,8 @@ doorMaps = [
 class Wall(pygame.sprite.Sprite):
   def __init__(self, x, y):
     super().__init__()
-    self.image = pygame.Surface((tileSize, tileSize))
-    self.image.fill((69, 44, 14))
+    self.image = pygame.image.load("/Users/jpollack/Desktop/CodingFiles/CodingFiles/rpgTest/images/walls.png")
+    # self.image.fill((69, 44, 14))
     self.rect = self.image.get_rect()
     self.rect.topleft = (x*tileSize, y*tileSize)
     self.type = 'Wall'
@@ -104,6 +104,17 @@ class CoinChest(pygame.sprite.Sprite):
   def open(self, player):
     player.coins += self.coins
     self.image.fill((202, 245, 29))
+class WeaponChest(pygame.sprite.Sprite):
+  def __init__(self, x, y, id):
+    super().__init__()
+    self.image = pygame.Surface((tileSize, tileSize))
+    self.image.fill((66, 66, 66))
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x*tileSize, y*tileSize)
+    self.type = 'Chest'
+    self.weapon = players.crescentRose
+    def open(self, player):
+      pass
 class KeyChest(pygame.sprite.Sprite):
   def __init__(self, x, y, id):
     super().__init__()
@@ -255,7 +266,7 @@ for x in range(len(worldMaps)):
         else:
           continue
         spriteMaps[x][y].add(tempVariable)
-julian = players.adventurer('Hawk Feather', 'Tabaxi', 81, [players.fight, players.elvenBow, players.flight, players.bomb], 'Hawk')
+julian = players.adventurer('Hawk Feather', 'Tabaxi', 81, [players.crescentRose, players.elvenBow, players.flight, players.bomb], 'Hawk')
 def gameLoop():
   all_sprites.draw(screen)
   screen.blit(julian.image, julian.rect.topleft)

@@ -1,6 +1,6 @@
 import pygame, random, os #imports libraries 
 from switch import * #imports switch case functions and an overarching button class
-os.chdir('/Users/jpollack/Desktop/CodingFiles/repos/testFile/CodingFiles/PythonFiles/flappyBird') #comment this out if you're not using my computer, just sets the directory to the folder this is in
+os.chdir('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/flappyBird') #comment this out if you're not using my computer, just sets the directory to the folder this is in
 pygame.init() #initializes pygame
 screen = pygame.display.set_mode((1080, 600)) #create screen
 class Game: #class to store various variables

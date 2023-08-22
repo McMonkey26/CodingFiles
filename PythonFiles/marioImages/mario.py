@@ -13,7 +13,7 @@ screen.fill([92, 148, 252])
 pygame.display.flip()
 class player:
   def __init__(self, name, x, y, width, height):
-    self.image = pygame.transform.scale(pygame.image.load('/Users/jpollack/Desktop/CodingFiles/PythonFiles/marioImages/'+name.lower()+'.png').convert_alpha(), (width, height))
+    self.image = pygame.transform.scale(pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/marioImages/'+name.lower()+'.png').convert_alpha(), (width, height))
     self.name = name
     self.hitbox = pygame.Rect(x, y, width, height)
     self.x = x
@@ -38,7 +38,7 @@ class player:
 class tile:
   def __init__(self, block, x, y, contents=None):
     self.block = block
-    self.image = pygame.transform.scale(pygame.image.load('/Users/jpollack/Desktop/CodingFiles/PythonFiles/marioImages/'+block+'.png').convert_alpha(), (16, 16))
+    self.image = pygame.transform.scale(pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/marioImages/'+block+'.png').convert_alpha(), (16, 16))
     self.x = x
     self.y = height-y
     self.hitbox = pygame.Rect(x, height-y, 16, 16)
@@ -108,7 +108,7 @@ while run:
     mario.bottomCol.append( testHitbox.colliderect(tile.bottomBox))
     if testHitbox.colliderect(tile.bottomBox) and tile.block == 'question':
       tile.block = 'hitQuestion'
-      tile.image = pygame.transform.scale(pygame.image.load('/Users/jpollack/Desktop/CodingFiles/PythonFiles/marioImages/hitQuestion.png').convert_alpha(), (16, 16))
+      tile.image = pygame.transform.scale(pygame.image.load('/Users/jpollack/Desktop/CodingFiles/CodingFiles/PythonFiles/marioImages/hitQuestion.png').convert_alpha(), (16, 16))
   if any(mario.leftCol) or any(mario.rightCol):
     mario.xSpeed = 0
   if any(mario.topCol) or any(mario.bottomCol):
