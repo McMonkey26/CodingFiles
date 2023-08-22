@@ -268,7 +268,6 @@ for x in range(len(worldMaps)):
         spriteMaps[x][y].add(tempVariable)
 julian = players.adventurer('Hawk Feather', 'Tabaxi', 81, [players.crescentRose, players.elvenBow, players.flight, players.bomb], 'Hawk')
 def gameLoop():
-  all_sprites.draw(screen)
   screen.blit(julian.image, julian.rect.topleft)
   screen.blit(julian.inv.image, (0, tileSize*7))
   players.testing.update(julian)
